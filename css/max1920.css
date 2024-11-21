@@ -1,0 +1,103 @@
+@media screen and (max-width: 1490px){
+    /*어빌러티 영역*/
+    li.history_title {
+        font-size: 0.94rem;
+    }
+    span.history_detail {
+        font-size: 0.9em;
+    }
+    .history_text_left li.date {
+        font-size: 0.9rem;
+    }
+    .date_line {
+        height: 80%;
+    }
+    .license_wrap > div {
+        font-size: 0.85em;
+    }
+    .tool_list > span {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1368px){
+    /*어바웃 영역*/
+    .main_title {
+        font-size: 2em;
+    }
+    .profile_informat span {
+        font-size: 0.8rem;
+    }
+    .profile_informat li {
+        font-size: 1rem;
+    }
+    .profile_right_wrap > p {
+        font-size: 1.04em;
+        line-height: 1.64em;
+    }
+    /*어빌러티 영역*/
+    .history_text_left ul {
+        margin: 0.6em 0;
+    }
+    li.history_title {
+        width: auto;
+        margin-left: 9%;
+        float: none;
+        font-size: 0.9rem;
+    }
+    .history_text_left li.date {
+        width: auto;
+        float: none;
+        font-size: 0.9rem;
+    }
+    .date_line {
+        height: 83%;
+        top: 6%;
+        left: 10.5%;
+    }
+    .license_wrap > div {
+        font-size: 0.75em;
+    }
+    .tool_list > span {
+        font-size: 0.9rem;
+    }
+    /*정주효를 소개할게요*/
+    .self_introduct_keyword > h1 {
+        font-size: 1.8rem;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+    .title span {
+        font-size: 1.6rem;
+    }
+    .keyword_container > p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    /*다른 사람이 생각하는 정주효의 모습*/
+    .other_view_Left_txt > h1 {
+        line-height: 1.5em;
+        font-size: 1.8em;
+    }
+    .other_view_list h3 {
+        font-size: 1.2rem;
+    }
+    .other_view_list h3 > span {
+        font-size: 1.6rem;
+    }
+    .other_view_list p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    /*컨텍트 영역*/
+    .contact_information_txt {
+        font-size: 1.14em;
+        line-height: 1.9em;
+    }
+    .contact_title > h1 {
+        font-size: 2.2em;
+    }
+    .contact_title > p {
+        font-size: 0.9em;
+    }
+}
