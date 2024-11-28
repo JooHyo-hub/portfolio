@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/max1280.css">
     <link rel="stylesheet" href="css/max1024.css">
     <link rel="stylesheet" href="css/max767.css">
+    <link rel="stylesheet" href="css/max479.css">
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -41,6 +42,12 @@
                 <li>CONTACT</li>
             </ul>
             <div class="name">Portfolio / Jung Joo Hyo</div>
+            <!--햄버거 아이콘-->
+            <div class="hamb_icon">
+                <span class="top"></span>
+                <span class="mid"></span>
+                <span class="botm"></span>
+            </div>
         </div>
     </header>
     <!--메인-->
@@ -64,7 +71,7 @@
             </div>
         </div>
         <!--어바웃 영역-->
-        <section class="about_section">
+        <section class="about_section sectionName">
             <h1 data-aos="fade-up">ABOUT</h1>
             <!--메인 소개-->
             <article class="about_element_wrap" data-aos="fade-up" data-aos-duration="2000">
@@ -169,7 +176,7 @@
                         </div>
                         <div class="list">
                             <h3>
-                                <span>03 / </span>목표지향
+                                <span>03 / </span>목표성
                             </h3>
                             <p>
                                 목표를 세우고 진행을 할 때 계획을 세우고 목표를 향해
@@ -185,7 +192,7 @@
             </article>
         </section>
         <!--어빌러티 영역-->
-        <section class="abillty_section" data-aos="fade-up" data-aos-duration="2000">
+        <section class="abillty_section sectionName" data-aos="fade-up" data-aos-duration="2000">
             <h1>ABILLTY</h1>
             <article class="abillty_content_wrap">
                 <div class="history_text_left">
@@ -269,7 +276,7 @@
             </article>
         </section>
         <!--포트폴리오 영역-->
-        <section class="portfolio_section" data-aos="fade-up" data-aos-duration="2000">
+        <section class="portfolio_section sectionName" data-aos="fade-up" data-aos-duration="2000">
             <h1>PORTFOLIO</h1>
             <!--해비치-->
             <article class="site_contents site_haevichi">
@@ -503,7 +510,7 @@
             </article>
         </section>
         <!--클론 코딩 영역-->
-        <section class="clone_coding_wrap" data-aos="fade-up" data-aos-duration="2000">
+        <section class="clone_coding_wrap sectionName" data-aos="fade-up" data-aos-duration="2000">
             <h1>Clone Coding</h1>
             <p>* HTML과 CSS 학습을 위해 기존 사이트 모작 구현하였습니다.</p>
             <article class="clone_work_container">
@@ -542,61 +549,59 @@
             </article>
         </section>
         <!--디자인 작업 영역-->
-        <section class="design_artwork_wrap" data-aos="fade-up" data-aos-duration="2000">
+        <section class="design_artwork_wrap sectionName" data-aos="fade-up" data-aos-duration="2000">
             <h1>DESIGN ARTWORK</h1>
             <p>* 100% 개인 작업 디자인 작업물입니다.</p>
-            <article class="artwork_out_box">
-                <div class="artwork_list_container">
-                    <div class="artwork_list_inner_box slick">
-                        <!--아트워크 리스트-->
-                        <div class="artwork_list">
-                            <div class="artwork_img_box">
-                                <img src="img/design-artwork/puppy-poster.jpg" alt="임시 이미지1"/>
-                            </div>
-                            <div class="artwork_title">상세페이지 1</div>
-                            <div class="viewmore_btn">
-                                <button>자세히 보기</button>
-                            </div>
+            <article class="artwork_list_container">
+                <div class="artwork_list_inner_box slick">
+                    <!--아트워크 리스트-->
+                    <div class="artwork_list">
+                        <div class="artwork_img_box">
+                            <img src="img/design-artwork/puppy-poster.jpg" alt="임시 이미지1"/>
                         </div>
-                        <!--아트워크 리스트-->
-                        <div class="artwork_list">
-                            <div class="artwork_img_box">
-                                <img src="img/design-artwork/puppy-poster.jpg" alt="임시 이미지2"/>
-                            </div>
-                            <div class="artwork_title">상세페이지 2</div>
-                            <div class="viewmore_btn">
-                                <button>자세히 보기</button>
-                            </div>
+                        <div class="artwork_title">상세페이지 1</div>
+                        <div class="viewmore_btn">
+                            <button>자세히 보기</button>
                         </div>
-                        <!--아트워크 리스트-->
-                        <div class="artwork_list">
-                            <div class="artwork_img_box">
-                                <img src="img/design-artwork/puppy-poster.jpg" alt="강아지 용품 박람회 포스터"/>
-                            </div>
-                            <div class="artwork_title">강아지 용품 박람회 포스터</div>
-                            <div class="viewmore_btn">
-                                <button>자세히 보기</button>
-                            </div>
+                    </div>
+                    <!--아트워크 리스트-->
+                    <div class="artwork_list">
+                        <div class="artwork_img_box">
+                            <img src="img/design-artwork/puppy-poster.jpg" alt="임시 이미지2"/>
                         </div>
-                        <!--아트워크 리스트-->
-                        <div class="artwork_list">
-                            <div class="artwork_img_box">
-                                <img src="img/design-artwork/orange-poster.jpg" alt="쥬스 광고 포스터"/>
-                            </div>
-                            <div class="artwork_title">쥬스 광고 포스터</div>
-                            <div class="viewmore_btn">
-                                <button>자세히 보기</button>
-                            </div>
+                        <div class="artwork_title">상세페이지 2</div>
+                        <div class="viewmore_btn">
+                            <button>자세히 보기</button>
                         </div>
-                        <!--아트워크 리스트-->
-                        <div class="artwork_list">
-                            <div class="artwork_img_box">
-                                <img src="img/design-artwork/X-banner.jpg" alt="비빔밥 X배너"/>
-                            </div>
-                            <div class="artwork_title">비빔밥 X배너</div>
-                            <div class="viewmore_btn">
-                                <button>자세히 보기</button>
-                            </div>
+                    </div>
+                    <!--아트워크 리스트-->
+                    <div class="artwork_list">
+                        <div class="artwork_img_box">
+                            <img src="img/design-artwork/puppy-poster.jpg" alt="강아지 용품 박람회 포스터"/>
+                        </div>
+                        <div class="artwork_title">애견용품 박람회 포스터</div>
+                        <div class="viewmore_btn">
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                    <!--아트워크 리스트-->
+                    <div class="artwork_list">
+                        <div class="artwork_img_box">
+                            <img src="img/design-artwork/orange-poster.jpg" alt="쥬스 광고 포스터"/>
+                        </div>
+                        <div class="artwork_title">쥬스 광고 포스터</div>
+                        <div class="viewmore_btn">
+                            <button>자세히 보기</button>
+                        </div>
+                    </div>
+                    <!--아트워크 리스트-->
+                    <div class="artwork_list">
+                        <div class="artwork_img_box">
+                            <img src="img/design-artwork/X-banner.jpg" alt="비빔밥 X배너"/>
+                        </div>
+                        <div class="artwork_title">비빔밥 X배너</div>
+                        <div class="viewmore_btn">
+                            <button>자세히 보기</button>
                         </div>
                     </div>
                 </div>
@@ -612,7 +617,7 @@
                     <h1>CONTACT ME !</h1>
                     <p>
                         제 포트폴리오를 끝까지 봐주셔서 감사합니다.
-                        <span>궁금한 점이 있으기면 위 정보로 연락 부탁드립니다.</span>
+                        <span>궁금한 점이 있으기면 해당 정보로 연락 부탁드립니다.</span>
                     </p>
                 </div>
                 <div class="contact_information_txt">
@@ -632,19 +637,5 @@
             이 포트폴리오는 HTML • CSS • jQuery 사용하여 제작한 반응형 웹 사이트입니다.
         </div>
     </footer>
-
-    <!--스크롤 플러그인 실행-->
-    <script>
-        AOS.init(); 
-    </script>
-    <!--자동 슬라이드 플러그인-->
-    <script>
-        $('.slick').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
-    </script>
 </body>
 </html>

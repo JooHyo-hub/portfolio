@@ -50,9 +50,7 @@
         font-size: 0.9rem;
     }
     .date_line {
-        height: 83%;
-        top: 6%;
-        left: 10.5%;
+        display: none;
     }
     .license_wrap > div {
         font-size: 0.75em;

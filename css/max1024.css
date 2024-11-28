@@ -22,10 +22,6 @@
     .about_section > h1 {
         padding: 0 8rem;
     }
-    .resume_btn button {
-        padding: 1.4% 3%;
-        margin-right: 10%;
-    }
     .profile_left_wrap {
         width: 100%;
         float: none;
@@ -40,7 +36,7 @@
         width: 40%;
         position: relative;
         top: 0;
-        left: 47%;
+        left: 52%;
         border: 6px solid #D5D5D5;
     }
     ul.profile_informat {
@@ -49,7 +45,7 @@
         padding-left: 0%;
         position: absolute;
         top: 50%;
-        right: 0;
+        right: 2%;
         transform: translateY(-50%);
     }
     .profile_informat li{
@@ -81,15 +77,19 @@
         font-size: 0.94em;
     }
     .resume_btn {
-        width: 16%;
+        width: 6em;
+        box-sizing: border-box;
         position: absolute;
-        top: -17%;
-        right: 12%;
-        margin-top: 0;
+        bottom: 111%;
+        right: 14%;
+        background: #ddd;
     }
     .resume_btn button {
-        padding: 4.4% 7%;
-        margin-right: 10%;
+        width: 100%;
+        padding: 6% 0;
+        font-size: 0.8em;
+        margin-right: 0;
+        float: none;
     }
     /*정주효를 소개할게요*/
     article.self_introduct_keyword{
@@ -141,6 +141,7 @@
         border: none;
     }
     .date_line {
+        display: block;
         height: 84%;
         top: 9%;
         left: 5.4%;
@@ -180,6 +181,7 @@
         width: 80%;
         margin: 0 auto;
         float: none;
+        position: relative;
     }
     .right_area {
         width: 100%;
@@ -198,41 +200,11 @@
         padding: 1.6% 0;
     }
     button.conceptBtn {
-        padding: 1.2% 3%;
-        font-size: 0.74em;
-    }
-    .site_name {
-        font-size: 0.86em;
-    }
-    .site_name span {
-        font-size: 1.9em;
-    }
-    .site_detail_explanat dl dt {
-        font-size: 1rem;
-    }
-    .site_detail_explanat dl dd {
-        font-size: 0.94rem;
-    }
-    p.annotation {
-        margin: 4% 0;
-        font-size: 0.76em;
-    }
-    .site_haevichi button.conceptBtn {
+        padding: 1.2% 2%;
+        font-size: 0.7em;
         position: absolute;
-        bottom: 33.4%;
-        right: 14%;
-        z-index: 10;
-    }
-    .site_elle button.conceptBtn {
-        position: absolute;
-        bottom: 32.4%;
-        right: 14%;
-        z-index: 10;
-    }
-    .site_nivea button.conceptBtn {
-        position: absolute;
-        bottom: 32%;
-        right: 14%;
+        right: 6%;
+        bottom: -26%;
         z-index: 10;
     }
     /*클론 코딩 영역*/
@@ -258,8 +230,8 @@
     .artwork_list {
         margin: 0 24px;
     }
-    .artwork_img_box{
-        max-height: 300px;
+    .artwork_img_box {
+        height: 30vh;
     }
     .artwork_title {
         font-size: 0.9rem;
@@ -328,10 +300,6 @@
         font-size: 1rem;
         font-weight: 400;
     }
-    /*디자인 작업 영역*/
-    .artwork_img_box {
-        max-height: 240px;
-    }
 }
 @media screen and (max-width: 910px){
     /*배너*/
@@ -368,9 +336,6 @@
     .design_artwork_wrap > h1::after {
         display: none;
     }
-    .artwork_img_box {
-        max-height: 190px;
-    }
 }
 @media screen and (max-width: 850px){
     /*배너*/
@@ -380,6 +345,10 @@
     .banner_title {
         height: 68vh;
     }
+    /*어바웃 영역*/
+    .resume_btn {
+        right: 17%;
+    }
     /*포트폴리오 영역*/
     .left_area {
         width: 100%;
@@ -387,20 +356,14 @@
     .right_area {
         padding: 0 8%;
     }
+    .site_detail_explanat {
+        margin: 8% 0;
+    }
     .site_elle .right_area {
         padding: 0 8%;
     }
-    .site_haevichi button.conceptBtn {
-        right: 10%;
-        bottom: 36%;
-    }
-    .site_elle button.conceptBtn {
-        right: 10%;
-        bottom: 35%;
-    }
-    .site_nivea button.conceptBtn {
-        right: 10%;
-        bottom: 35%;
+    button.conceptBtn {
+        bottom: -24%;
     }
     /*클론 코딩 영역*/
     article.clone_work_container {
@@ -411,13 +374,33 @@
         padding: 6% 5%;
     }
     /*디자인 작업 영역*/
+    .artwork_list_container {
+        margin-top: 8%;
+    }
+    .artwork_list_inner_box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
     .artwork_list {
-        margin: 0 15px;
+        margin: 0;
+        margin-bottom: 10%;
+    }
+    .artwork_img_box {
+        height: 38vh;
+    }
+    .artwork_title {
+        font-size: 0.9rem;
+    }
+    .viewmore_btn button {
+        width: 34%;
+        padding: 1.6% 0;
+        font-size: 0.78em;
     }
 }
 @media screen and (max-width: 840px){
     /*어바웃 영역*/
-    .about_section > h1 {
+    .sectionName > h1 {
         font-size: 2.4rem;
     }
     /*정주효를 소개할게요*/
@@ -434,6 +417,7 @@
     }
     .keyword_container {
         width: 100%;
+        box-sizing: border-box;
         margin-top: 5%;
     }
     .title {
@@ -457,5 +441,8 @@
     }
     .other_view_list h3 > span {
         font-size: 1.7rem;
+    }
+    .other_view_list p {
+        font-size: 0.94rem;
     }
 }

@@ -1,3 +1,36 @@
+//--슬릭 플러그인
+$(document).ready(function(){
+    function initializeSlick() {
+        if (!$('.artwork_list_inner_box').hasClass('slick-initialized')) {
+            $('.artwork_list_inner_box').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        }
+    }
+
+    function checkViewportWidth() {
+        if ($(window).outerWidth() <= 850) {
+            if ($('.artwork_list_inner_box').hasClass('slick-initialized')) {
+                $('.artwork_list_inner_box').slick('unslick'); // slick 멈추기
+            }
+        } else {
+            initializeSlick(); // slick 실행하기
+        }
+    }
+
+    // 초기 체크 및 리사이즈 이벤트 핸들러
+    checkViewportWidth();
+    $(window).on('resize', checkViewportWidth);
+});
+
+//-- 슬라이드 플러그인
+$(document).ready(function(){
+    AOS.init();
+});
+
 //--프로그레스바 스크롤 이벤트
 $(document).scroll(function (e) {
     var scrollAmount = $(window).scrollTop();

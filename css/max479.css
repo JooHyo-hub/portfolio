@@ -1,0 +1,53 @@
+@media screen and (max-width: 479px){
+    /*배너*/
+    .banner_title {
+        left: 34%;
+    }
+    /*어바웃 영역*/
+    .about_section > h1 {
+        padding: 0 2rem;
+    }
+    .profile_img_container img {
+        width: 38%;
+    }
+    ul.profile_informat {
+        left: 50%;
+    }
+    .profile_right_wrap > p {
+        width: 80%;
+    }
+    .resume_btn {
+        right: 8%;
+    }
+    /*정주효를 소개할게요*/
+    article.self_introduct_keyword {
+        padding: 0 2rem;
+    }
+    /*다른 사람이 생각하는 정주효의 모습*/
+    .other_view_Left_txt {
+        padding: 0 2rem;
+    }
+    /*어빌러티 영역*/
+    section.abillty_section {
+        padding: 0 2rem;
+    }
+    /*포트폴리오 영역*/
+    section.portfolio_section {
+        padding: 6rem 2rem;
+    }
+    button.conceptBtn {
+        bottom: -27%;
+    }
+    /*클론 코딩 영역*/
+    section.clone_coding_wrap {
+        padding: 0 2rem;
+    }
+    /*디자인 작업 영역*/
+    section.design_artwork_wrap {
+        padding: 11rem 2rem;
+    }
+    /*컨텍트 영역*/
+    .contact_title {
+        top: -75vw;
+    }
+}

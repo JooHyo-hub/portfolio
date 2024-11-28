@@ -1,6 +1,4 @@
 /*랜탑, 태블릿 = 1025px ~ 1280px*/
-/* 
-} */
 @media screen and (max-width: 1280px){
     /*배너*/
     .banner_title > div {
@@ -10,9 +8,6 @@
         font-size: 1.18em;
     }
     /*어바웃 영역*/
-    .about_section > h1 {
-        font-size: 3rem;
-    }
     .profile_informat li {
         font-size: 0.9rem;
     }
@@ -30,9 +25,6 @@
         font-size: 0.9em;
     }
     /*어빌러티 영역*/
-    .abillty_section > h1 {
-        font-size: 3rem;
-    }
     .history_text_left ul {
         margin: 0.6em 0;
     }
@@ -55,39 +47,7 @@
     .license_wrap {
         gap: 12px;
     }
-    /*포트폴리오 영역*/
-    .portfolio_section > h1 {
-        font-size: 3rem;
-    }
-    button.conceptBtn {
-        text-align: left;
-        padding: 1.4% 5%;
-    }
-    .site_name {
-        font-size: 0.86em;
-    }
-    .site_name span {
-        font-size: 2.1em;
-    }
-    .site_detail_explanat dl dt {
-        font-size: 1rem;
-    }
-    .site_detail_explanat dl dd {
-        font-size: 0.94rem;
-    }
-    .site_detail_explanat dd span img{
-        transform: scale(0.9);
-    }
-    .btn_container button {
-        font-size: 0.9em;
-    }
-    p.annotation {
-        font-size: 0.8em;
-    }
     /*클론 코딩 영역*/
-    .clone_coding_wrap > h1 {
-        font-size: 3rem;
-    }
     .clone_coding_wrap > h1::before {
         width: 30%;
     }
@@ -104,9 +64,6 @@
         font-size: 0.9em;
     }
     /*디자인 작업 영역*/
-    .design_artwork_wrap > h1 {
-        font-size: 3rem;
-    }
     .design_artwork_wrap > p {
         font-size: 1rem;
     }
@@ -115,9 +72,6 @@
     }
     .design_artwork_wrap > h1::after {
         width: 25%;
-    }
-    .artwork_img_box{
-        max-height: 350px;
     }
     .artwork_title {
         font-size: 1.08rem;
@@ -177,20 +131,10 @@
 }
 @media screen and (max-width: 1158px){
     /*어바웃 영역*/
-    .about_section > h1 {
-        font-size: 2.7rem;
-    }
-    /*어빌러티 영역*/
-    .abillty_section > h1 {
+    .sectionName > h1 {
         font-size: 2.7rem;
     }
     /*포트폴리오 영역*/
-    .portfolio_section > h1 {
-        font-size: 2.7rem;
-    }
-    button.conceptBtn{
-        font-size: 0.8em;
-    }
     .site_name {
         font-size: 0.78em;
     }
@@ -207,9 +151,6 @@
         font-size: 0.7em;
     }
     /*클론 코딩 영역*/
-    .clone_coding_wrap > h1 {
-        font-size: 2.7rem;
-    }
     .clone_coding_wrap > p {
         font-size: 0.9rem;
     }
@@ -217,9 +158,6 @@
         font-size: 0.8em;
     }
     /*디자인 작업 영역*/
-    .design_artwork_wrap > h1 {
-        font-size: 2.7rem;
-    }
     .design_artwork_wrap > p {
         font-size: 0.9rem;
     }
@@ -229,9 +167,6 @@
 }
 @media screen and (max-width: 1091px){
     /*어바웃 영역*/
-    .about_section > h1 {
-        font-size: 2.8rem;
-    }
     .main_title {
         font-size: 1.5em;
     }
@@ -244,14 +179,6 @@
     .profile_right_wrap > p {
         font-size: 0.9em;
         line-height: 1.5em;
-    }
-    /*어빌러티 영역*/
-    .abillty_section > h1 {
-        font-size: 2.8rem;
-    }
-    /*포트폴리오 영역*/
-    .portfolio_section > h1 {
-        font-size: 2.8rem;
     }
 }
 @media screen and (max-width: 1038px){
