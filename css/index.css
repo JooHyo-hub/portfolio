@@ -215,7 +215,6 @@ section.about_section{
     overflow: hidden;
     box-sizing: border-box;
     border: 6px solid #D5D5D5;
-    background: #fff;
     position: relative;
 }
 .profile_img_container img{

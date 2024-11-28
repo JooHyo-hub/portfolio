@@ -245,6 +245,8 @@
 }
 @media screen and (max-width: 980px){
     .banner_title {
+        min-height: 500px;
+        max-height: 720px;
         height: 77vh;
     }
     .banner_title > div {
