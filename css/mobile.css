@@ -9,6 +9,9 @@
     .about_section > h1 {
         padding: 0 2rem;
     }
+    .keyword_container {
+        margin-top: 8%;
+    }
     .profile_img_container img {
         width: 38%;
     }
