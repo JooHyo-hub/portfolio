@@ -22,10 +22,8 @@ body{
     color: #111;
     font-family: 'Pretendard-Regular';
 }
-/*헤더*/
 header{
     width: 100%;
-    /* overflow: hidden; */
     font-family: "Judson", serif;
     font-weight: 400;
     background: #FEFCF9;
@@ -34,7 +32,6 @@ header{
     left: 0;
     z-index: 30;
 }
-/*프로그레스 바*/
 .progress-container {
 	position: fixed;
 	top: 0px;
@@ -51,7 +48,6 @@ header{
 	border-radius: 0px 10px 10px 0px;
 	border-radius: 10px;
 }
-/*헤더 컨텐츠*/
 .head_inner_box{
     max-width: 1920px;
     width: 100%;
@@ -94,7 +90,6 @@ header{
     right: 1.4em;
     display: none;
 }
-/*햄버거 아이콘*/
 .hamb_icon{
     width: 30px;
     height: 30px;
@@ -102,7 +97,6 @@ header{
     margin-right: 2.3%;
     cursor: pointer;
     display: none;
-    /* background: lightblue; */
 }
 .hamb_icon > span{
     display: block;
@@ -112,12 +106,10 @@ header{
     background: #353535;
     border-radius: 2px;
 }
-/*메인*/
 main{
     width: 100%;
     padding-top: 5.2%;
 }
-/*배너*/
 .main_banner_wrap{
     width: 100%;
     height: 100%;
@@ -136,7 +128,6 @@ main{
     position: relative;
     top: 0;
     left: 38%;
-    /* background: rgba(173, 216, 230, 0.712); */
 }
 .banner_title > div{
     margin: 3% 0;
@@ -161,7 +152,7 @@ main{
     height: 30%;
     animation: blink infinite 1s ease;
 }
-@keyframes blink { /*타이핑 애니메이션*/
+@keyframes blink { 
     0%  {
         opacity:0;
     }
@@ -183,7 +174,6 @@ main{
     position: absolute;
     bottom: 10%;
 }
-/*어바웃 영역*/
 section.about_section{
     max-width: 1920px;
     width: 100%;
@@ -214,7 +204,6 @@ section.about_section{
 .about_element_wrap > div{
     margin-top: 5%;
 }
-/*프로필 사진 및 정보*/
 .profile_left_wrap{
     width: 45%;
     overflow: hidden;
@@ -260,7 +249,6 @@ ul.profile_informat{
     border: 1px solid #939393;
     border-radius: 6px;
 }
-/*프로필 타이틀 소개*/
 .profile_right_wrap{
     width: 55%;
     overflow: hidden;
@@ -307,7 +295,6 @@ ul.profile_informat{
 .resume_btn button:hover{
     background-color: #C16A3B;
 }
-/*정주효를 소개할게요*/
 article.self_introduct_keyword{
     clear: both;
     width: 100%;
@@ -371,7 +358,6 @@ span.circle{
     font-size: 1.125rem;
     line-height: 1.725rem;
 }
-/*다른 사람이 생각하는 정주효의 모습*/
 article.other_view_wrap{
     width: 100%;
     overflow: hidden;
@@ -397,6 +383,7 @@ article.other_view_wrap{
 }
 .other_view_list > .list{
     clear: both;
+    overflow: hidden;
     margin-top: 9%;
 }
 .other_view_list h3 {
@@ -432,7 +419,6 @@ article.other_view_wrap{
     height: 100%;
     object-fit: cover;
 }
-/*어빌러티 영역*/
 section.abillty_section {
     max-width: 1920px;
     width: 100%;
@@ -581,7 +567,6 @@ span.history_detail{
 .tool_Figma .actual_degree{
     width: 82%;
 }
-/*포트폴리오 영역*/
 section.portfolio_section{
     max-width: 1920px;
     width: 100%;
@@ -606,7 +591,6 @@ article.site_contents{
 article.site_haevichi{
     padding-top: 4%;
 }
-/*왼쪽 영역(공통)*/
 .left_area{
     width: 60%;
     float: left;
@@ -689,7 +673,6 @@ button.conceptBtn {
     z-index: 20;
     transition: all 4s ease-in-out;
 }
-/*오른쪽 영역(공통)*/
 .right_area{
     width: 40%;
     overflow: hidden;
@@ -701,7 +684,7 @@ button.conceptBtn {
     font-size: 0.9em;
     color: #797979;
 }
-.site_name span{
+.site_name span.engName{
     margin-right: 2%;
     font-size: 2em;
     font-weight: 900;
@@ -794,18 +777,17 @@ p.annotation{
     font-size: 0.74em;
     color: #797979;
 }
-/*해비치*/
 .site_haevichi button.conceptBtn {
     border-color: #395977;
     color: #0b2c4b;
 }
 .site_haevichi .pc_img > img{
-    top: 0%; /*top: -568%;*/
+    top: 0%; 
 }
 .site_haevichi .mobile_img > img{
-    top: 0%; /*top: -313%;*/
+    top: 0%; 
 }
-.site_haevichi .site_name span{
+.site_haevichi span.engName{
     color: #415F89;
 }
 .site_haevichi span.actual_level{
@@ -828,7 +810,6 @@ p.annotation{
 .site_haevichi .btn_container button:hover{
     background: #1b2e41;
 }
-/*엘르*/
 .site_elle .left_area{
     float: right;
 }
@@ -844,12 +825,12 @@ p.annotation{
     color: #824016;
 }
 .site_elle .pc_img > img{
-    top: 0% ; /*top: -625.4%;*/
+    top: 0% ; 
 }
 .site_elle .mobile_img > img{
-    top: 0%; /*top: -313%;*/
+    top: 0%; 
 }
-.site_elle span{
+.site_elle span.engName{
     color: #644B3B;
 }
 .site_elle span.actual_level{
@@ -876,13 +857,12 @@ p.annotation{
 .site_elle .btn_container button:hover{
     background: #5c4537;
 }
-/*니베아*/
 .site_nivea button.conceptBtn {
     border-color: #3D5CA1;
     color: #2750AB;
 }
 .site_nivea .pc_img > img{
-    top: 0%; /*top: -436.4%;*/
+    top: 0%; 
 }
 .mockup_tablet{
     width: 52%;
@@ -909,16 +889,16 @@ p.annotation{
     display: inline-block;
     width: 100%;
     position: absolute;
-    top: 0; /*top: -972%;*/
+    top: 0; 
     left: 0;
     object-fit: cover;
     z-index: 20;
     transition: all 4s ease-in-out;
 }
 .site_nivea .mobile_img > img{
-    top: 0%; /*top: -521%;*/
+    top: 0%; 
 }
-.site_nivea .site_name span{
+.site_nivea span.engName{
     color: #014DAF;
 }
 .site_nivea span.actual_level{
@@ -938,14 +918,13 @@ p.annotation{
     background: #3D5CA1;
 }
 .site_nivea .btn_container button{
-    width: 30%;
+    width: 24%;
     background: #0661D7;
     color: #fff;
 }
 .site_nivea .btn_container button:hover{
     background: #003882;
 }
-/*클론 코딩 영역*/
 section.clone_coding_wrap{
     max-width: 1920px;
     width: 100%;
@@ -1012,12 +991,11 @@ article.clone_work_container > div{
     width: 35%;
     padding: 2% 0;
 }
-/*빽다방*/
 .baekdabang_work_contents h1{
     color: #061F61;
 }
 .baekdabang_work_contents .pc_img > img{
-    top: 0%; /*top: -436.4%;*/
+    top: 0%; 
 }
 .baekdabang_work_contents .btn_container > button{
     background: #061F61;
@@ -1026,12 +1004,11 @@ article.clone_work_container > div{
 .baekdabang_work_contents .btn_container > button:hover{
     background: #000a27;
 }
-/*스타벅스*/
 .starbucks_work_contents h1{
     color: #007042;
 }
 .starbucks_work_contents .pc_img > img{
-    top: 0%; /*top: -328.2%;*/
+    top: 0%; 
 }
 .starbucks_work_contents .btn_container > button{
     background: #007042;
@@ -1040,7 +1017,6 @@ article.clone_work_container > div{
 .starbucks_work_contents .btn_container > button:hover{
     background: #012516;
 }
-/*디자인 작업 영역*/
 section.design_artwork_wrap{
     max-width: 1920px;
     width: 100%;
@@ -1134,7 +1110,6 @@ section.design_artwork_wrap{
     background: #C16A3B;
     color: #fff;
 }
-/*컨텍트 영역*/
 section.contact_wrap{
     max-width: 1920px;
     width: 100%;
@@ -1195,7 +1170,6 @@ article.contact_contents{
     left: 50%;
     transform: translateX(-50%);
 }
-/*푸터*/
 footer{
     width: 100%;
     margin-top: 6%;

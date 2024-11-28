@@ -1,0 +1,123 @@
+@media screen and (max-width: 479px){
+    .banner_title {
+        height: 50vh;
+        left: 34%;
+    }
+    .job_type_txt {
+        width: 7em;
+    }
+    .about_section > h1 {
+        padding: 0 2rem;
+    }
+    .profile_img_container img {
+        width: 38%;
+    }
+    ul.profile_informat {
+        left: 50%;
+    }
+    .profile_right_wrap > p {
+        width: 80%;
+    }
+    .resume_btn {
+        right: 8%;
+    }
+    .license_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    article.self_introduct_keyword {
+        padding: 0 2rem;
+    }
+    .other_view_Left_txt {
+        padding: 0 2rem;
+    }
+    .other_view_list p {
+        float: left;
+        padding-left: 0;
+    }
+    section.abillty_section {
+        padding: 0 2rem;
+    }
+    section.portfolio_section {
+        padding: 6rem 2rem;
+    }
+    button.conceptBtn {
+        bottom: -27%;
+    }
+    .site_name span.krName{
+        display: none;
+    }
+    section.clone_coding_wrap {
+        padding: 0 2rem;
+    }
+    section.design_artwork_wrap {
+        padding: 11rem 2rem;
+    }
+    .contact_title {
+        top: -75vw;
+    }
+}
+@media screen and (max-width: 450px){
+    button.conceptBtn {
+        bottom: -29%;
+    }
+}
+@media screen and (max-width: 420px){
+    .banner_title {
+        left: 30%;
+    }
+    button.conceptBtn {
+        bottom: -30%;
+    }
+    footer > div {
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .banner_title {
+        left: 27%;
+    }
+    .banner_title > div {
+        font-size: 1.9em;
+    }
+    .profile_img_container img {
+        width: 40%;
+    }
+    .profile_informat span {
+        border: none;
+        text-align: left;
+    }
+    button.conceptBtn {
+        font-size: 0.6em;
+    }
+    p.annotation {
+        font-size: 0.6em;
+    }
+}
+@media screen and (max-width: 360px){
+    .banner_title {
+        left: 22%;
+    }
+    .site_name {
+        font-size: 0.6em;
+    }
+    .site_detail_explanat dl dt {
+        font-size: 0.74rem;
+    }
+    .site_detail_explanat dl dd {
+        font-size: 0.7rem;
+    }
+    button.conceptBtn {
+        font-size: 0.4em;
+        bottom: -27%;
+    }
+    .contact_title > h1 {
+        font-size: 1.5em;
+    }
+    .contact_title > p {
+        font-size: 0.6em;
+    }
+    .contact_information_txt {
+        font-size: 0.7em;
+    }
+}

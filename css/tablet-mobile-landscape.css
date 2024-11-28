@@ -1,0 +1,263 @@
+@media screen and (max-width: 767px){
+    .head_inner_box > ul{
+        display: none;
+    }
+    .hamb_icon{
+        display: block;
+    }
+    .name {
+        display: block !important;
+        font-size: 1.4rem;
+        top: 50%;
+        left: 2.3%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    .porfol_banner_name{
+        display: none;
+    }
+    .main_title {
+        font-size: 1.4em;
+    }
+    .card_img_box {
+        width: 84%;
+    }
+    .contact_title {
+        left: 14%;
+    }
+}
+@media screen and (max-width: 770px){
+    .other_view_list p {
+        font-size: 0.94rem;
+    }
+    .history_text_left li.date {
+        width: 35%;
+    }
+    li.history_title {
+        font-size: 0.8rem;
+    }
+    .history_text_left li.date {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 684px){
+    .about_section > h1 {
+        padding: 0 4rem;
+    }
+    .main_title {
+        font-size: 1.3em;
+    }
+    .profile_img_container {
+        width: 100%;
+        float: none;
+    }
+    .profile_img_container img {
+        width: 30%;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    ul.profile_informat {
+        width: 100%;
+        float: none;
+        padding-left: 30%;
+        position: relative;
+        top: 4px;
+        left: 54%;
+        transform: translateX(-50%);
+    }
+    .profile_informat li {
+        margin: 2% 0;
+        font-size: 0.82rem;
+    }
+    .profile_informat span {
+        width: 10%;
+        font-size: 0.66rem;
+    }
+    .profile_right_wrap > p {
+        font-size: 0.9em;
+    }
+    .resume_btn {
+        bottom: 106%;
+        right: 12%;
+    }
+    article.self_introduct_keyword {
+        padding: 0 4rem;
+    }
+    .other_view_Left_txt {
+        padding: 0 4rem;
+    }
+    section.abillty_section {
+        padding: 0 4rem;
+    }
+    section.portfolio_section {
+        padding: 6rem 4rem;
+    }
+    section.clone_coding_wrap {
+        padding: 0 4rem;
+    }
+    section.design_artwork_wrap {
+        padding: 11rem 4rem;
+    }
+}
+@media screen and (max-width: 610px){
+    .name {
+        font-size: 1.2rem;
+    }
+    .banner_title {
+        height: 55vh;
+    }
+    .banner_title > div {
+        font-size: 2em;
+    }
+    .banner_title > p {
+        font-size: 0.8em;
+    }
+    .sectionName > h1 {
+        font-size: 2.2rem;
+    }
+    .profile_informat li {
+        font-size: 0.7rem;
+    }
+    .profile_informat span {
+        width: 10%;
+        font-size: 0.56rem;
+    }
+    .main_title {
+        font-size: 1.1em;
+    }
+    .profile_right_wrap > p {
+        font-size: 0.8em;
+    }
+    .resume_btn button {
+        font-size: 0.7em;
+    }
+    .self_introduct_keyword > h1 {
+        font-size: 1.1rem;
+    }
+    .title {
+        font-size: 0.9rem;
+    }
+    .title span {
+        font-size: 1.2rem;
+    }
+    .keyword_container > p {
+        font-size: 0.8rem;
+    }
+    article.other_view_wrap {
+        background: none;
+        padding: 0;
+        margin-top: 6rem;
+    }
+    .other_view_Left_txt > h1 {
+        font-size: 1.24em;
+    }
+    .other_view_Left_txt {
+        color: #111;
+    }
+    .other_view_list h3 {
+        font-size: 0.9rem;
+    }
+    .other_view_list h3 > span {
+        font-size: 1.2rem;
+    }
+    .other_view_list p {
+        font-size: 0.8rem;
+    }
+    .abillty_section > h1 {
+        font-size: 2.2rem;
+    }
+    .date_line {
+        display: none;
+    }
+    .history_text_left li.date {
+        width: 100%;
+    }
+    .history_text_left li.date::before {
+        margin-right: 2.8%;
+    }
+    li.history_title {
+        width: 100%;
+    }
+    .portfolio_section > h1{
+        font-size: 2.2rem;
+    }
+    .site_name {
+        font-size: 0.7em;
+    }
+    .site_detail_explanat dl dt {
+        font-size: 0.8rem;
+    }
+    .site_detail_explanat dl dd {
+        font-size: 0.78rem;
+    }
+    dl.Period dd span {
+        width: 18px;
+        height: 18px;
+    }
+    dl.Period dd span img {
+        top: -4px;
+    }
+    .design_artwork_wrap > h1{
+        font-size: 2.2rem;
+    }
+    .design_artwork_wrap > p {
+        font-size: 0.7rem;
+    }
+    .artwork_list_inner_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .clone_coding_wrap > h1 {
+        font-size: 2.2rem;
+    }
+    .clone_coding_wrap > p {
+        font-size: 0.7rem;
+    }
+    .clone_work_container h1 {
+        font-size: 1.3rem;
+    }
+    .clone_coding_wrap .annotation {
+        font-size: 0.7em;
+    }
+    .contact_title > h1 {
+        font-size: 1.3em;
+    }
+    .contact_information_txt {
+        font-size: 0.76em;
+    }
+    .contact_title > p {
+        font-size: 0.62em;
+    }
+    .contact_information_txt {
+        bottom: 50%;
+    }
+    .contact_title {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: -70vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact_title > h1 {
+        font-size: 1.6em;
+    }
+    .contact_title > p {
+        font-size: 0.76em;
+    }
+    footer > div {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .sectionName > h1 {
+        font-size: 2rem;
+    }
+    .license_wrap > div {
+        font-size: 0.66em;
+    }
+    .tool_list > span {
+        font-size: 0.8rem;
+    }
+}
