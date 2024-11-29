@@ -262,3 +262,27 @@ $(document).ready(function(){
     
 
 });
+
+//--모바일 메뉴
+$(document).ready(function(){
+    let $hambIcon = $('.hamb_icon');
+    let $SDmenu_closeBtn = $('.mobile_side_menu .closeIcon');
+    let $SideMenu = $('.mobile_side_menu');
+
+    //메뉴 나타나기
+    $hambIcon.click(function(){
+        $SideMenu.css({
+            right : '0',
+            opacity : '1'
+        });
+    });
+
+    //메뉴 숨기기
+    $SDmenu_closeBtn.click(function(){
+        $SideMenu.css({
+            right : '-100%',
+            opacity : '0'
+        });
+    });
+
+});
