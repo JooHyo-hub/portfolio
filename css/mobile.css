@@ -105,19 +105,19 @@
         font-size: 0.62em;
     }
 }
-@media screen and (max-height: 820px){
+@media screen and (max-height: 790px){
     /*컨셉 모달창*/
     .closeBtn {
         top: 9%;
     }
 }
-@media screen and (max-height: 795px){
+@media screen and (max-height: 770px){
     /*컨셉 모달창*/
     .closeBtn {
         top: 8%;
     }
 }
-@media screen and (max-height: 765px){
+@media screen and (max-height: 750px){
     /*컨셉 모달창*/
     .closeBtn {
         top: 7%;
