@@ -408,9 +408,8 @@ article.other_view_wrap{
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    float: right;
+    margin-top: 7em;
     border-bottom-right-radius: 50%;
 }
 .other_view_right_Img > img{
@@ -1182,4 +1181,303 @@ footer > div{
     text-align: center;
     color: #E3E3E3;
     font-size: 1rem;
+}
+/*컨셉 설명 모달창*/
+div.concept_modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: #000000c2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    /* display: none; */
+}
+/*닫기 버튼*/
+.closeBtn{
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 13%;
+    right: 14%;
+    z-index: 60;
+}
+.closeBtn img{
+    width: 100%;
+    transition: transform 0.2s ease-out;
+}
+.closeBtn:hover img{
+    transform: scale(0.7);
+}
+/*모달 공통*/
+.site_modal{
+    width: 75%;
+    min-height: 42.31em;
+    height: 80%;
+    padding: 3.13em 5em;
+    box-sizing: border-box;
+    background: #FFFAF3;
+    border-radius: 2.19em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+}
+/*사이트 이름*/
+h2.modal_name{
+    padding-top: 0.84em;
+    padding-bottom: 0.63em;
+    font-size: 2.38em;
+    font-weight: 700;
+}
+.modal_name > span{
+    padding: 0 0.5em;
+    font-size: 0.47em;
+    font-weight: 500;
+    color: #797979;
+}
+/*썸네일, 오버뷰, 키워드*/
+.thumImg_overview_container{
+    width: 100%;
+    box-sizing: border-box;
+}
+.thumImg{
+    width: 33%;
+    overflow: hidden;
+    float: left;
+}
+.thumImg > img{
+    width: 100%;
+    object-fit: cover;
+}
+.overview_txt{
+    overflow: hidden;
+    padding-left: 2.25em;
+    text-align: left;
+}
+h3.modal_title{
+    font-size: 1.63em;
+    font-family: "Judson", serif;
+    font-weight: 700;
+}
+.overview_txt > p{
+    margin: 1em 0;
+    line-height: 1.5em;
+    font-size: 1em;
+    color: #5A5A5A;
+}
+ul.concept_keyword li{
+    float: left;
+    margin-right: 1.5em;
+    font-size: 1em;
+    font-weight: 600;
+}
+/*기기 버튼*/
+.devicesBtn_annotat_wrap{
+    clear: both;
+}
+.devicesBtn_inner_box{
+    width: 16em;
+    float: right;
+}
+.devicesBtn{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.63em;
+}
+.devicesBtn > button{
+    width: 50%;
+    padding: 0.31em 0;
+    border: 1px solid #000;
+    border-radius: 0.38em;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.devicesBtn_inner_box > p{
+    margin-top: 3%;
+    text-align: center;
+    font-size: 0.74em;
+    color: #797979;
+}
+/*컬러, 타이포*/
+.colors_typograph_wrap{
+    padding-top: 1.88em;
+    overflow: hidden;
+    clear: both;
+}
+/*컬러*/
+.colors_container{
+    width: 33%;
+    float: left;
+}
+ul.chips_square{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+}
+ul.chips_square > li{
+    width: 100%;
+    height: 7em;
+    box-sizing: border-box;
+    position: relative;
+}
+ul.chips_square > li:first-child{
+    border: 1px solid #CCCCCC;
+    background: #fff;
+}
+ul.chips_square > li > span{
+    font-size: 0.75em;
+    position: absolute;
+    bottom: 0.38em;
+    left: 0.38em;
+    color: #696969;
+}
+ul.chips_square > li > span.F5F5F5{
+    color: #F5F5F5;
+}
+/*타이포*/
+.typograph_container{
+    width: auto;
+    overflow: hidden;
+    float: left;
+    margin-left: 2.25em;
+    box-sizing: border-box;
+}
+.font_wrap{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3.75em;
+}
+.font_wrap > div{
+    clear: both;
+    width: auto;
+    margin-top: 1em;
+    box-sizing: border-box;
+}
+.font_wrap > div span.fontName{
+    font-size: 1em;
+    color: #7E7E7E;
+}
+ul.font_sample{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 2.5em;
+    padding-top: 1em;
+    font-size: 0.88em;
+}
+ul.font_sample li{
+    width: auto;
+    text-align: center;
+}
+ul.font_sample li span{
+    display: block;
+    font-size: 2em;
+}
+/*해비치 모달*/
+.haevichi_modal .modal_name{
+    color: #415F89;
+}
+.haevichi_modal .devicesBtn > button{
+    border-color: #116AB0;
+    color: #116AB0;
+}
+.haevichi_modal .devicesBtn > button:hover{
+    background-color: #116AB0;
+    color: #fff;
+}
+.haevichi_chip li:nth-child(2){
+    background: #116AB0;
+}
+.haevichi_chip li:nth-child(3){
+    background: #334A5E; 
+}
+.haevichi_chip li:nth-child(4){
+    background: #222222;
+}
+.haevichi_modal .font-2 .font_sample{
+    padding-top: 1.31em;
+}
+.ft_NotosansKR li span{
+    font-family: "Noto Sans KR", sans-serif;
+}
+.ft_Playfair li span{
+    font-family: "Playfair", serif;
+}
+span.Light{
+    font-weight: 300;
+}
+span.Regular{
+    font-weight: 400;
+}
+span.Bold{
+    font-weight: 800;
+}
+/*엘르 모달*/
+.elle_modal .modal_name{
+    color: #644B3B;
+}
+.elle_modal .devicesBtn{
+    display: block;
+    text-align: center;
+}
+.elle_modal .devicesBtn > button{
+    border-color: #2A221D;
+    color: #2A221D;
+}
+.elle_modal .devicesBtn > button:hover{
+    background-color: #2A221D;
+    color: #fff;
+}
+.elle_chip li:nth-child(2){
+    background: #EFE3D8;
+    border: 1px solid #CCCCCC;
+    border-left: none;
+}
+.elle_chip li:nth-child(3){
+    background: #2A221D; 
+}
+.elle_chip li:nth-child(4){
+    background: #111111;
+}
+.elle_modal .font-2 .font_sample{
+    padding-top: 0.634em;
+}
+.ft_ArefRuqaa li span{
+    font-family: "Aref Ruqaa", serif;
+}
+/*니베아 모달*/
+.nivea_modal .modal_name{
+    color: #014DAF;
+}
+.nivea_modal .devicesBtn > button{
+    border-color: #0032A0;
+    color: #0032A0;
+}
+.nivea_modal .devicesBtn > button:hover{
+    background-color: #0032A0;
+    color: #fff;
+}
+.nivea_chip li:nth-child(2){
+    background: #9093F4;
+}
+.nivea_chip li:nth-child(3){
+    background: #0032A0; 
+}
+.nivea_chip li:nth-child(4){
+    background: #3D5CA1;
+}
+.nivea_modal .font-2 .font_sample{
+    padding-top: 0.25em;
+}
+.ft_Afacad li span{
+    font-family: "Aref Ruqaa", serif;
 }

@@ -242,6 +242,30 @@
         font-size: 0.74em;
         margin: 1.6% 0;
     }
+    /*컨셉 모달창*/
+    h2.modal_name {
+        padding-top: 0;
+    }
+    .colors_typograph_wrap {
+        padding-top: 0;
+    }
+    .colors_container {
+        float: none;
+        margin-top: 1em;
+    }
+    ul.chips_square {
+        display: flex;
+    }
+    .colors_container {
+        width: 100%;
+    }
+    .typograph_container {
+        margin-top: 2em;
+    }
+    .typograph_container {
+        float: none;
+        margin-left: 0;
+    }
 }
 @media screen and (max-width: 980px){
     .banner_title {
@@ -421,5 +445,32 @@
     }
     .other_view_list p {
         font-size: 0.94rem;
+    }
+    /*컨셉 모달창*/
+    .site_modal {
+        padding: 3.13em 3em;
+    }
+    h2.modal_name {
+        font-size: 1.7em;
+        padding-top: 0.4em;
+    }
+    h3.modal_title {
+        font-size: 1.36em;
+    }
+    .overview_txt > p {
+        font-size: 0.84em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.84em;
+    }
+    .devicesBtn > button {
+        font-size: 0.7em;
+        padding: 0.4em 0;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.84em;
+    }
+    ul.font_sample {
+        font-size: 0.72em;
     }
 }

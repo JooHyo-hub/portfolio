@@ -59,6 +59,68 @@
     .contact_title {
         top: -75vw;
     }
+    /*컨셉 모달창*/
+    .closeBtn {
+        top: 5%;
+        right: 6%;
+    }
+    .site_modal {
+        width: 95%;
+        height: 95%;
+        padding: 3.13em 1.4em;
+    }
+    h3.modal_title{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .overview_txt > p {
+        font-size: 0.76em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.76em;
+    }
+    ul.concept_keyword{
+        width: 100%;
+        overflow: hidden;
+        padding: 0 2em;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ul.concept_keyword li {
+        float: none;
+        margin-right: 0;
+    }
+    .devicesBtn_inner_box {
+        position: absolute;
+        left: 50%;
+        bottom: 3em;
+        transform: translateX(-50%);
+    }
+    .colors_typograph_wrap {
+        padding-top: 2em;
+    }
+    ul.chips_square > li {
+        height: 3em;
+    }
+    .typograph_container {
+        margin-top: 3em;
+    }
+    .font_wrap{
+        display: block !important;
+        text-align: center;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.76em;
+    }
+    ul.font_sample {
+        justify-content: center;
+    }
+    ul.font_sample li span {
+        font-size: 1.9em;
+    }
 }
 @media screen and (max-width: 450px){
     button.conceptBtn {

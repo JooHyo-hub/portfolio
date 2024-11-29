@@ -78,7 +78,7 @@ $(document).ready(function (){
             $menu.eq(1).addClass('focusolor');
         } else if ($headerBottom >= $portfolioTop && $headerBottom < $contactTop) {
             $menu.eq(2).addClass('focusolor');
-        } else if ($headerBottom >= $contactTop) {
+        } else if ($headerBottom >= $contactTop) {  //반응형, 조건문 추가 필요!!
             $menu.eq(3).addClass('focusolor');
         }
     });
@@ -101,14 +101,17 @@ $(document).ready(function (){
             $('html, body').animate({
                 scrollTop: $homeTop 
             }, 500);
+
         } else if ($index === 1) {
             $('html, body').animate({
                 scrollTop: $aboutTop 
             }, 500);
+
         } else if ($index === 2) {
             $('html, body').animate({
                 scrollTop: $portfolioTop 
             }, 500);
+
         } else if ($index === 3) {
             $('html, body').animate({
                 scrollTop: $contactTop
@@ -116,7 +119,8 @@ $(document).ready(function (){
         }
     });
 });
-
+    
+    
 //--배너 타이핑 효과
 $(document).ready(function () {
     const txtWrap = document.querySelector('.typing');
@@ -215,4 +219,46 @@ $(document).ready(function(){
     },function(){
         $(this).css({'top' : '0%'});
     });
+});
+
+//--컨셉 설명 모달창
+$(document).ready(function(){
+    let $conceptBtn = $('.conceptBtn');
+    let $conceptModal = $('.concept_modal_wrap');
+    let $closeBtn = $('.concept_modal_wrap .closeBtn');
+    let $siteModal = $('.site_modal');
+
+    // 컨셉 버튼 클릭 시
+    $conceptBtn.click(function() {
+
+        console.log($conceptBtn);
+
+        $conceptModal.fadeIn(300);
+        $siteModal.hide();
+
+        if ($(this).is($conceptBtn.eq(0))) { 
+            $siteModal.eq(0).fadeIn(300); 
+
+        } else if($(this).is($conceptBtn.eq(1))) {
+            $siteModal.eq(1).fadeIn(300); 
+        } else{
+            $siteModal.eq(2).fadeIn(300); 
+        }
+    });
+
+    //모달창 닫기 버튼 클릭시
+    $closeBtn.click(function() {
+        $conceptModal.hide();
+        $siteModal.hide();
+    });
+
+    let $devicesBtn = $('.devicesBtn > button');
+
+    //모달창 기기 버튼 클릭시
+    $devicesBtn.click(function() {
+        $conceptModal.hide();
+        $siteModal.hide();
+    });
+    
+
 });

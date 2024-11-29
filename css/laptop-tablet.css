@@ -73,6 +73,43 @@
     .viewmore_btn button {
         font-size: 0.8em;
     }
+    /*컨셉 모달창*/
+    h2.modal_name {
+        font-size: 2.2em;
+    }
+    .modal_name > span {
+        font-size: 0.39em;
+    }
+    h3.modal_title {
+        font-size: 1.4em;
+    }
+    .overview_txt > p {
+        font-size: 0.9em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.9em;
+    }
+    .devicesBtn_inner_box {
+        margin-top: 2em !important;
+    }
+    .devicesBtn_inner_box > p {
+        font-size: 0.7em;
+    }
+    .colors_typograph_wrap {
+        padding-top: 2.8em;
+    }
+    ul.chips_square > li > span {
+        font-size: 0.68em;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.9em;
+    }
+    /* .typograph_container {
+        margin-left: 5.25em;
+    } */
+    ul.font_sample {
+        font-size: 0.78em;
+    }
 }
 @media screen and (max-width: 1200px){
     .name{
@@ -149,6 +186,42 @@
     .design_artwork_wrap > p {
         font-size: 1rem;
     }
+    /*컨셉 모달창*/
+    h2.modal_name {
+        font-size: 1.9em;
+        padding-bottom: 0.3em;
+    }
+    .closeBtn {
+        width: 1.8em;
+        height: 1.8em;
+        right: 15%;
+    }
+    .devicesBtn_inner_box {
+        margin: 0 auto;
+        float: none;
+    }
+    .thumImg_overview_container {
+        margin-top: 1em;
+    }
+    .thumImg {
+        display: none;
+    }
+    .overview_txt {
+        padding-left: 0;
+    }
+    .colors_typograph_wrap {
+        padding-top: 4.6em;
+    }
+    .colors_container {
+        width: 30%;
+    }
+    ul.chips_square {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    ul.chips_square > li {
+        height: 3.4em;
+    }
 }
 @media screen and (max-width: 1091px){
     .main_title {
@@ -171,5 +244,9 @@
     }
     .profile_informat li {
         font-size: 0.8rem;
+    }
+    /*컨셉 모달창*/
+    .elle_modal {
+        height: 84%;
     }
 }
