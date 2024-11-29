@@ -1,4 +1,129 @@
 @media screen and (max-width: 479px){
+    /*컨셉 모달창*/
+    .closeBtn {
+        width: 1.6em;
+        height: 1.6em;
+        top: 5%;
+        right: 6%;
+    }
+    .site_modal {
+        width: 95%;
+        height: 95%;
+        min-height: 40.31em;
+        padding: 3.13em 1.4em;
+    }
+    h2.modal_name{
+        padding-top: 0;
+    }
+    h3.modal_title{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .overview_txt > p {
+        font-size: 0.76em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.76em;
+    }
+    ul.concept_keyword{
+        width: 100%;
+        overflow: hidden;
+        padding: 0 2em;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ul.concept_keyword li {
+        float: none;
+        margin-right: 0;
+    }
+    .devicesBtn_inner_box {
+        position: absolute;
+        left: 50%;
+        bottom: 3em;
+        transform: translateX(-50%);
+    }
+    .colors_typograph_wrap {
+        padding-top: 1.2em;
+    }
+    ul.chips_square > li {
+        height: 3em;
+    }
+    .typograph_container {
+        margin-top: 2em;
+    }
+    .font_wrap{
+        display: block;
+        text-align: center;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.76em;
+    }
+    ul.font_sample {
+        justify-content: center;
+    }
+    ul.font_sample li span {
+        font-size: 1.9em;
+    }
+}
+@media screen and (max-height: 835px){
+    /*컨셉 모달창*/
+    .site_modal {
+        max-height: 700px;
+    }
+    .closeBtn {
+        top: 10%;
+    }
+    h2.modal_name {
+        font-size: 1.5em;
+    }
+    h3.modal_title {
+        font-size: 1.1em;
+    }
+    .overview_txt > p {
+        font-size: 0.7em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.7em;
+    }
+    ul.chips_square > li > span {
+        font-size: 0.6em;
+    }
+    .font_wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.7em;
+    }
+    ul.font_sample {
+        font-size: 0.64em;
+    }
+    .devicesBtn_inner_box > p {
+        font-size: 0.62em;
+    }
+}
+@media screen and (max-height: 820px){
+    /*컨셉 모달창*/
+    .closeBtn {
+        top: 9%;
+    }
+}
+@media screen and (max-height: 795px){
+    /*컨셉 모달창*/
+    .closeBtn {
+        top: 8%;
+    }
+}
+@media screen and (max-height: 765px){
+    /*컨셉 모달창*/
+    .closeBtn {
+        top: 7%;
+    }
+}
+@media screen and (max-width: 479px) {
     .banner_title {
         height: 50vh;
         left: 34%;
@@ -58,68 +183,6 @@
     }
     .contact_title {
         top: -75vw;
-    }
-    /*컨셉 모달창*/
-    .closeBtn {
-        top: 5%;
-        right: 6%;
-    }
-    .site_modal {
-        width: 95%;
-        height: 95%;
-        padding: 3.13em 1.4em;
-    }
-    h3.modal_title{
-        text-align: center;
-        font-size: 1.3em;
-    }
-    .overview_txt > p {
-        font-size: 0.76em;
-    }
-    ul.concept_keyword li {
-        font-size: 0.76em;
-    }
-    ul.concept_keyword{
-        width: 100%;
-        overflow: hidden;
-        padding: 0 2em;
-        box-sizing: border-box;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    ul.concept_keyword li {
-        float: none;
-        margin-right: 0;
-    }
-    .devicesBtn_inner_box {
-        position: absolute;
-        left: 50%;
-        bottom: 3em;
-        transform: translateX(-50%);
-    }
-    .colors_typograph_wrap {
-        padding-top: 2em;
-    }
-    ul.chips_square > li {
-        height: 3em;
-    }
-    .typograph_container {
-        margin-top: 3em;
-    }
-    .font_wrap{
-        display: block !important;
-        text-align: center;
-    }
-    .font_wrap > div span.fontName {
-        font-size: 0.76em;
-    }
-    ul.font_sample {
-        justify-content: center;
-    }
-    ul.font_sample li span {
-        font-size: 1.9em;
     }
 }
 @media screen and (max-width: 450px){
