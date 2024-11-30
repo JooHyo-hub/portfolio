@@ -1185,7 +1185,7 @@ footer > div{
 /*컨셉 설명 모달창*/
 div.concept_modal_wrap{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #000000c2;
     position: fixed;
     top: 0;
@@ -1193,14 +1193,22 @@ div.concept_modal_wrap{
     z-index: 50;
     display: none;
 }
+.modal_inner_wrap{
+    width: 75%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /*닫기 버튼*/
 .closeBtn{
     width: 2em;
     height: 2em;
     cursor: pointer;
     position: absolute;
-    top: 13%;
-    right: 14%;
+    top: 5%;
+    right: 3%;
     z-index: 60;
 }
 .closeBtn img{
@@ -1212,23 +1220,16 @@ div.concept_modal_wrap{
 }
 /*모달 공통*/
 .site_modal{
-    width: 75%;
-    min-height: 42.31em;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     padding: 3.13em 5em;
     box-sizing: border-box;
     background: #FFFAF3;
     border-radius: 2.19em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
 }
 /*사이트 이름*/
 h2.modal_name{
-    padding-top: 0.84em;
-    padding-bottom: 0.63em;
+    padding: 2% 0;
     font-size: 2.38em;
     font-weight: 700;
 }
@@ -1241,6 +1242,7 @@ h2.modal_name{
 /*썸네일, 오버뷰, 키워드*/
 .thumImg_overview_container{
     width: 100%;
+    overflow: hidden;
     box-sizing: border-box;
 }
 .thumImg{
@@ -1307,7 +1309,7 @@ ul.concept_keyword li{
 }
 /*컬러, 타이포*/
 .colors_typograph_wrap{
-    padding-top: 1.88em;
+    padding-top: 5%;
     overflow: hidden;
     clear: both;
 }
@@ -1357,7 +1359,7 @@ ul.chips_square > li > span.F5F5F5{
 .font_wrap > div{
     clear: both;
     width: auto;
-    margin-top: 1em;
+    margin-top: 3%;
     box-sizing: border-box;
 }
 .font_wrap > div span.fontName{
@@ -1513,8 +1515,8 @@ span.Bold{
     font-size: 20px;
 }
 .closeIcon{
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     padding: 2px;
     box-sizing: content-box;
     float: left;
@@ -1542,7 +1544,7 @@ span.Bold{
 .side_menu_contents{
     width: 100%;
     height: 100vh;
-    padding-top: 80px;
+    padding-top: 25%;
     box-sizing: border-box;
     border-top: 1px solid #717171;
     position: relative;
@@ -1552,11 +1554,9 @@ ul.menu_list{
     text-align: center;
 }
 .menu_list li{
-    height: 40px;
-    line-height: 40px;
     box-sizing: border-box;
-    margin: 45px 0;
-    font-size: 32px;
+    margin: 1em 0;
+    font-size: 2em;
     font-family: "Judson", serif;
     font-weight: 400;
     color: #B7B7B7;
@@ -1564,37 +1564,36 @@ ul.menu_list{
     cursor: pointer;
 }
 .menu_list li:hover{
-    font-size: 40px;
+    font-size: 2.2em;
     font-weight: 700;
     color: #fff;
 }
-.menuList_focus{
-    font-size: 40px;
+li.sideFocus{ /*스크립트 제어*/
+    font-size: 2.2em;
     font-weight: 700;
     color: #fff;
 }
 .back_text{
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
     color: #535353;
 }
 .back_text::before{
     display: block;
     content: '';
-    width: 50px;
+    width: 2em;
     height: 1px;
-    margin: 50px auto;
+    margin: 2em auto;
     background: #717171;
 }
 .back_text> span{
     display: block;
-    margin: 3px 0;
 }
 /*하단 이름*/
 .name_box{
     width: 100%;
-    height: 66px;
-    line-height: 66px;
+    height: 4.13em;
+    line-height: 4.13em;
     overflow: hidden;
     position: absolute;
     bottom: 0;
@@ -1602,15 +1601,15 @@ ul.menu_list{
     border-top: 1px solid #717171;
 }
 .my_photo{
-    width: 34px;
-    height: 34px;
+    width: 2.13em;
+    height: 2.13em;
     overflow: hidden;
     float: left;
     box-sizing: border-box;
     border-radius: 50%;
     position: relative;
     top: 50%;
-    left: 30px;
+    left: 1em;
     transform: translateY(-50%);
 }
 .my_photo img{
@@ -1621,7 +1620,7 @@ ul.menu_list{
 }
 .name_box > p{
     float: left;
-    margin-left: 50px;
+    margin-left: 2em;
     font-family: "Judson", serif;
     font-weight: 400;
 }

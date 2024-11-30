@@ -103,11 +103,8 @@
 }
 @media screen and (max-width: 630px){
     /*컨셉 모달창*/
-    .site_modal {
+    .modal_inner_wrap {
         width: 90%;
-    }
-    .closeBtn {
-        right: 10%;
     }
 }
 @media screen and (max-width: 610px){
@@ -260,23 +257,12 @@
     footer > div {
         font-size: 0.8rem;
     }
-    .haevichi_modal {
-        height: 82%;
-    }
 }
 @media screen and (max-width: 540px){
     /*컨셉 모달창*/
-    .elle_modal {
-        height: 86%;
-    }
-}
-@media screen and (max-width: 510px){
-    /*컨셉 모달창*/
     .font_wrap {
-        gap: 30px;
-    }
-    .haevichi_modal {
-        height: 84%;
+        justify-content: space-between;
+        gap: 0;
     }
 }
 @media screen and (max-width: 500px){

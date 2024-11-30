@@ -90,13 +90,13 @@
         font-size: 0.9em;
     }
     .devicesBtn_inner_box {
-        margin-top: 2em !important;
+        margin-top: 7% !important;
     }
     .devicesBtn_inner_box > p {
         font-size: 0.7em;
     }
     .colors_typograph_wrap {
-        padding-top: 2.8em;
+        padding-top: 8%;
     }
     ul.chips_square > li > span {
         font-size: 0.68em;
@@ -194,14 +194,13 @@
     .closeBtn {
         width: 1.8em;
         height: 1.8em;
-        right: 15%;
     }
     .devicesBtn_inner_box {
         margin: 0 auto;
         float: none;
     }
     .thumImg_overview_container {
-        margin-top: 1em;
+        margin-top: 2%;
     }
     .thumImg {
         display: none;
@@ -210,7 +209,7 @@
         padding-left: 0;
     }
     .colors_typograph_wrap {
-        padding-top: 4.6em;
+        padding-top: 14%;
     }
     .colors_container {
         width: 30%;
@@ -244,9 +243,5 @@
     }
     .profile_informat li {
         font-size: 0.8rem;
-    }
-    /*컨셉 모달창*/
-    .elle_modal {
-        height: 84%;
     }
 }

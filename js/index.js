@@ -43,81 +43,113 @@ $(document).scroll(function (e) {
     // $(".percent").text(roundScroll); //퍼센트 숫자
 });
 
-//--헤더 스크롤 및 클릭 이벤트
+//--메뉴 스크롤 및 클릭 이벤트
 $(document).ready(function (){
     // 각 요소 노드 저장
-    let $about_sect = $('.about_section');
+    let $about_sect = $('.about_section');  
     let $portfolio_sect = $('.portfolio_section');
     let $contact_sect = $('.contact_wrap');
     let $menu = $('.head_inner_box li');
+    let $sidemenu = $('.menu_list > li');
+    // 각 섹션의 탑 위치 저장
+    let $aboutTop = $about_sect.offset().top;   
+    let $portfolioTop = $portfolio_sect.offset().top - parseFloat($portfolio_sect.css('padding-top')); //패딩값 제외
+    let $contactTop = $contact_sect.offset().top;
 
     // 스크롤 이벤트
     $(window).scroll(function(){
+        // 초기화
+        $menu.removeClass('focusolor'); 
+        $sidemenu.removeClass('sideFocus');
         
         let $headerBottom = $('header').offset().top + $('header').outerHeight(); // 헤더의 바닥 위치
-        let $aboutTop = $about_sect.offset().top;   // 각 섹션의 탑 위치 저장
-        let $portfolioTop = $portfolio_sect.offset().top;
-        let $contactTop = $contact_sect.offset().top;
 
-        // 헤더 타이틀 텍스트 이벤트
+        // 연락처 섹션 반응형으로 인한 컬러 변경
+        let contactHeight = $contact_sect.outerHeight();
+        let contactVisb = $contactTop + contactHeight * 0.5;
         let $scrollTop = $(window).scrollTop();
 
-        if ($scrollTop > 800) { 
-            $('.name').fadeIn();
-        } else {
-            $('.name').fadeOut().css('display', 'none');
+        if ($scrollTop + $(window).height() >= contactVisb) {
+            $menu.removeClass('focusolor');
+            $menu.eq(3).addClass('focusolor');
+            $sidemenu.removeClass('sideFocus');
+            $sidemenu.eq(3).addClass('sideFocus');
         }
-
-        // 헤더 리스트 컬러 이벤트
-        $menu.removeClass('focusolor'); // 초기화
-
-        // 실행
+        
+        // 헤더 메뉴, 사이드 메뉴 컬러 변경
         if ($headerBottom < $aboutTop) {
             $menu.eq(0).addClass('focusolor');
+            $sidemenu.eq(0).addClass('sideFocus');
+
         } else if ($headerBottom >= $aboutTop && $headerBottom < $portfolioTop) {
             $menu.eq(1).addClass('focusolor');
+            $sidemenu.eq(1).addClass('sideFocus');
+
+        } else if ($headerBottom >= $contactTop && $(window).scrollTop() + $(window).height() >= $(document).height()) {
+            $menu.eq(3).addClass('focusolor');
+            $sidemenu.eq(3).addClass('sideFocus');
+
         } else if ($headerBottom >= $portfolioTop && $headerBottom < $contactTop) {
             $menu.eq(2).addClass('focusolor');
-        } else if ($headerBottom >= $contactTop) {  //반응형, 조건문 추가 필요!!
-            $menu.eq(3).addClass('focusolor');
+            $sidemenu.eq(2).addClass('sideFocus');
+
+            if($menu.eq(3).hasClass('focusolor') && $sidemenu.eq(3).hasClass('sideFocus')){
+                $menu.eq(2).removeClass('focusolor');
+                $sidemenu.eq(2).removeClass('sideFocus');
+            }
+        }
+
+        // 헤더 타이틀 텍스트 이벤트
+        if ($scrollTop > 800) {    
+            $('.name').fadeIn();
+
+        } else {
+            $('.name').fadeOut();
         }
     });
 
-    // 클릭 이벤트
+    // 헤더 메뉴 클릭 시
     $menu.on('click', function() {
-        // 클릭한 메뉴의 인덱스
-        let $index = $menu.index(this); 
-        
-        // 각 섹션의 탑 위치 저장
-        let $homeTop  = $('.main_banner_wrap').offset().top;
-        let $aboutTop = $about_sect.offset().top;
-        let $portfolioTop = $portfolio_sect.offset().top;
-        let $contactTop = $contact_sect.offset().top;
+        $menu.removeClass('focusolor'); // 초기화
+        let index = $menu.index(this); // 클릭한 메뉴의 인덱스
+        positAnimate(index);
+    });
+
+    // 사이드 메뉴 클릭 시
+    $sidemenu.on('click', function() {
+        let index = $sidemenu.index(this); // 클릭한 메뉴의 인덱스
 
         $menu.removeClass('focusolor'); // 초기화
+        positAnimate(index);
+        $(this).parents('.mobile_side_menu').css({
+            right : '-100%',
+            opacity : '0'
+        });
+    });
 
-        // 실행
-        if ($index === 0) {
+    // 이벤트 실행
+    function positAnimate(index){
+        if (index === 0) {
             $('html, body').animate({
-                scrollTop: $homeTop 
+                scrollTop: 0 
             }, 500);
 
-        } else if ($index === 1) {
+        } else if (index === 1) {
             $('html, body').animate({
                 scrollTop: $aboutTop 
             }, 500);
 
-        } else if ($index === 2) {
+        } else if (index === 2) {
             $('html, body').animate({
                 scrollTop: $portfolioTop 
             }, 500);
 
-        } else if ($index === 3) {
+        } else if (index === 3) {
             $('html, body').animate({
-                scrollTop: $contactTop
+                scrollTop: $(document).height()
             }, 500);
         }
-    });
+    }
 });
     
     
@@ -268,6 +300,17 @@ $(document).ready(function(){
     let $hambIcon = $('.hamb_icon');
     let $SDmenu_closeBtn = $('.mobile_side_menu .closeIcon');
     let $SideMenu = $('.mobile_side_menu');
+
+    $(window).on('resize', function() {
+        if ($(window).width() >= 768) {
+            $SideMenu.css({
+                right: '-100%',
+                opacity: '0'
+            });
+        }
+    });
+    
+    $(window).trigger('resize'); //trigger: 특정 이벤트를 수동으로 발생시키는 데 사용
 
     //메뉴 나타나기
     $hambIcon.click(function(){
