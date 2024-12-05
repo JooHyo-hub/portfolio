@@ -13,6 +13,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: #111;
 }
 button {
     font-family: 'Pretendard-Regular';
@@ -1062,7 +1063,8 @@ section.design_artwork_wrap{
     overflow: hidden;
     margin-top: 4%;
 }
-.artwork_list {
+a.artwork_list {
+    display: block;
     width: 100%;
     margin: 0 12px;
     box-sizing: border-box;
@@ -1070,16 +1072,17 @@ section.design_artwork_wrap{
 .artwork_img_box{
     width: 100%;
     height: 40vh;
+    background: #f8f7f5;
     position: relative;
 }
 .artwork_img_box > img{
-    display: inline-block;
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
     object-fit: contain;
+    transition: all 0.4s ease;
+}
+.artwork_list:hover img{
+    transform: scale(0.94);
 }
 .artwork_title{
     margin-top: 6%;
@@ -1091,9 +1094,10 @@ section.design_artwork_wrap{
     margin-top: 1em;
     text-align: center;
 }
-.viewmore_btn button{
+.viewmore_btn p{
     width: 35%;
     padding: 3% 0;
+    margin: 0 auto;
     font-size: 0.875em;
     border: 1px solid #212121;
     color: #212121;
@@ -1103,7 +1107,7 @@ section.design_artwork_wrap{
     cursor: pointer;
     transition: all 0.1s ease;
 }
-.viewmore_btn button:hover{
+.viewmore_btn p:hover{
     border-color: #C16A3B;
     background: #C16A3B;
     color: #fff;

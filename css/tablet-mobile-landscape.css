@@ -215,6 +215,10 @@
     }
     .artwork_list_inner_box {
         grid-template-columns: repeat(1, 1fr);
+        gap: 6rem;
+    }
+    .artwork_img_box{
+        background: none;
     }
     .clone_coding_wrap > h1 {
         font-size: 2.2rem;

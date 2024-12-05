@@ -384,7 +384,7 @@
     .artwork_list_inner_box{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 3rem;
     }
     .artwork_list {
         margin: 0;

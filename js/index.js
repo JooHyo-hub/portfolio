@@ -45,64 +45,71 @@ $(document).scroll(function (e) {
 
 //--메뉴 스크롤 및 클릭 이벤트
 $(document).ready(function (){
+    //스크롤 위치
+    let $scrollTop = $(window).scrollTop();
     // 각 요소 노드 저장
     let $about_sect = $('.about_section');  
     let $portfolio_sect = $('.portfolio_section');
     let $contact_sect = $('.contact_wrap');
     let $menu = $('.head_inner_box li');
     let $sidemenu = $('.menu_list > li');
-    // 각 섹션의 탑 위치 저장
-    let $aboutTop = $about_sect.offset().top;   
-    let $portfolioTop = $portfolio_sect.offset().top - parseFloat($portfolio_sect.css('padding-top')); //패딩값 제외
-    let $contactTop = $contact_sect.offset().top;
+    //각 섹션의 탑 값 저장할 변수
+    let $aboutTop, $portfolioTop, $contactTop;
+    // 각 섹션의 탑 값 저장 함수
+    function updateSect() {
+        $aboutTop = $about_sect.offset().top;   
+        $portfolioTop = $portfolio_sect.offset().top - parseFloat($portfolio_sect.css('padding-top')); //패딩값 제외
+        $contactTop = $contact_sect.offset().top;
+    }
 
-    // 스크롤 이벤트
+    // 리사이즈 시 업데이트
+    $(window).resize(function() {
+        updateSect();
+    });
+
+    //기본값
+    $menu.eq(0).addClass('focusolor');
+    $sidemenu.eq(0).addClass('sideFocus');
+
+    //스크롤 시
     $(window).scroll(function(){
-        // 초기화
-        $menu.removeClass('focusolor'); 
+        //초기화
+        $menu.removeClass('focusolor');
         $sidemenu.removeClass('sideFocus');
-        
+
         let $headerBottom = $('header').offset().top + $('header').outerHeight(); // 헤더의 바닥 위치
-
-        // 연락처 섹션 반응형으로 인한 컬러 변경
-        let contactHeight = $contact_sect.outerHeight();
-        let contactVisb = $contactTop + contactHeight * 0.5;
-        let $scrollTop = $(window).scrollTop();
-
-        if ($scrollTop + $(window).height() >= contactVisb) {
-            $menu.removeClass('focusolor');
-            $menu.eq(3).addClass('focusolor');
-            $sidemenu.removeClass('sideFocus');
-            $sidemenu.eq(3).addClass('sideFocus');
-        }
         
-        // 헤더 메뉴, 사이드 메뉴 컬러 변경
         if ($headerBottom < $aboutTop) {
-            $menu.eq(0).addClass('focusolor');
-            $sidemenu.eq(0).addClass('sideFocus');
+            focusMenu(0);
 
         } else if ($headerBottom >= $aboutTop && $headerBottom < $portfolioTop) {
-            $menu.eq(1).addClass('focusolor');
-            $sidemenu.eq(1).addClass('sideFocus');
-
-        } else if ($headerBottom >= $contactTop && $(window).scrollTop() + $(window).height() >= $(document).height()) {
-            $menu.eq(3).addClass('focusolor');
-            $sidemenu.eq(3).addClass('sideFocus');
+            focusMenu(1);
 
         } else if ($headerBottom >= $portfolioTop && $headerBottom < $contactTop) {
-            $menu.eq(2).addClass('focusolor');
-            $sidemenu.eq(2).addClass('sideFocus');
+            focusMenu(2); 
 
-            if($menu.eq(3).hasClass('focusolor') && $sidemenu.eq(3).hasClass('sideFocus')){
-                $menu.eq(2).removeClass('focusolor');
-                $sidemenu.eq(2).removeClass('sideFocus');
-            }
+        } else if($headerBottom >= $contactTop){
+            focusMenu(3);
+        }
+
+        // //반응형으로 인한 오류!!!!!!!!!!!
+        // let windowScrollPosition = $(window).scrollTop() + $(window).height();  // 현재 스크롤 위치 + 뷰포트 높이
+        // let documentHeight = $(document).height(); // 문서의 전체 높이
+
+        // if (windowScrollPosition = documentHeight) {
+        //     $menu.eq(3).addClass('focusolor');
+        //     $sidemenu.eq(3).addClass('sideFocus');
+        // }
+
+        //메뉴 컬러 변경
+        function focusMenu(index) {
+            $menu.eq(index).addClass('focusolor');
+            $sidemenu.eq(index).addClass('sideFocus');
         }
 
         // 헤더 타이틀 텍스트 이벤트
         if ($scrollTop > 800) {    
             $('.name').fadeIn();
-
         } else {
             $('.name').fadeOut();
         }
@@ -112,7 +119,7 @@ $(document).ready(function (){
     $menu.on('click', function() {
         $menu.removeClass('focusolor'); // 초기화
         let index = $menu.index(this); // 클릭한 메뉴의 인덱스
-        positAnimate(index);
+        moveSection(index);
     });
 
     // 사이드 메뉴 클릭 시
@@ -120,34 +127,26 @@ $(document).ready(function (){
         let index = $sidemenu.index(this); // 클릭한 메뉴의 인덱스
 
         $menu.removeClass('focusolor'); // 초기화
-        positAnimate(index);
+        moveSection(index);
         $(this).parents('.mobile_side_menu').css({
             right : '-100%',
             opacity : '0'
         });
     });
 
-    // 이벤트 실행
-    function positAnimate(index){
+    // 위치 이동 이벤트 실행
+    function moveSection(index){
         if (index === 0) {
-            $('html, body').animate({
-                scrollTop: 0 
-            }, 500);
+            $('html, body').animate({scrollTop: 0 }, 500);
 
         } else if (index === 1) {
-            $('html, body').animate({
-                scrollTop: $aboutTop 
-            }, 500);
+            $('html, body').animate({scrollTop: $aboutTop }, 500);
 
         } else if (index === 2) {
-            $('html, body').animate({
-                scrollTop: $portfolioTop 
-            }, 500);
+            $('html, body').animate({scrollTop: $portfolioTop }, 500);
 
         } else if (index === 3) {
-            $('html, body').animate({
-                scrollTop: $(document).height()
-            }, 500);
+            $('html, body').animate({scrollTop: $(document).height()}, 500);
         }
     }
 });
@@ -184,7 +183,7 @@ $(document).ready(function () {
     let setTyping = setInterval(typingEvent, txtSpeed);  // setInterval을 통한 텍스트 입력
 });
 
-//--작업 이미지 마우스 호버 이벤트
+//--포폴 목업 마우스 호버 이벤트
 $(document).ready(function(){
     //해비치
     let $heavichi_PC = $('.haevici_pcImg');
