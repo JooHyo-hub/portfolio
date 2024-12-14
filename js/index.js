@@ -100,7 +100,7 @@ $(document).ready(function (){
 
         // 헤더 타이틀 텍스트 이벤트
         let $scrollTop = $(window).scrollTop();
-        
+
         if ($scrollTop > 800) {    
             $('.name').fadeIn();
         } else {
@@ -198,7 +198,7 @@ $(document).ready(function(){
     let $elle_PC = $('.elle_pcImg');
 
     $elle_PC.hover(function(){
-        $(this).css({'top' : '-625.4%'});
+        $(this).css({'top' : '-625.2%'});
     },function(){
         $(this).css({'top' : '0%'});
     });
@@ -221,7 +221,7 @@ $(document).ready(function(){
     });
 
     $nivea_MB.hover(function(){
-        $(this).css({'top' : '-521%'});
+        $(this).css({'top' : '-525%'});
     },function(){
         $(this).css({'top' : '0%'});
     });
@@ -239,7 +239,7 @@ $(document).ready(function(){
     let $starbucks_PC = $('.starbucks_pcImg');
 
     $starbucks_PC.hover(function(){
-        $(this).css({'top' : '-328.2%'});
+        $(this).css({'top' : '-327.9%'});
     },function(){
         $(this).css({'top' : '0%'});
     });
