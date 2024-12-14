@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/tablet-mobile-landscape.css">
     <link rel="stylesheet" href="css/mobile.css">
     <script src="js/index.js"></script>
+    
 </head>
 <body>
     <!--헤더-->
@@ -57,8 +58,7 @@
                 <div class="banner_top_text">
                     <div class="job_type_txt typing"></div>
                     <div class="porfol_banner_name">
-                        <span>PORTFOLIO</span>
-                        <span>JEONG JOO HYO</span>
+                        <span>2024 정주효 포트폴리오</span>
                     </div>
                 </div>
                 <p>
@@ -86,7 +86,7 @@
                             <span>Birth</span>1999 .09 .20
                         </li>
                         <li>
-                            <span>Phone</span>010 - 67** - 56**
+                            <span>Phone</span>010 - 6791 - 5652
                         </li>
                         <li>
                             <span>Mail</span>wngygodqhr@naver.com
@@ -96,8 +96,7 @@
                 <!--프로필 타이틀 소개-->
                 <div class="profile_right_wrap">
                     <div class="main_title">
-                        <span>끊임없이 고민하고 발전하는,</span> 
-                        디자이너 ‘정주효’입니다.
+                        <span>끊임없이 고민하고 발전하는,</span> 웹 퍼블리셔 ‘정주효’입니다.
                     </div>
                     <p>
                         사용자의 욕구를 채워주기 위해 끊임없이 고민하는 디자이너,
@@ -107,7 +106,7 @@
                         이를 위해서 디자인 및 구현 능력 뿐만 아니라, 공감 및 소통 능력을 쌓으며 실력을 발전해 나가고 있습니다.
                     </p>
                     <div class="resume_btn">
-                        <button>이력서 확인하기</button>
+                        <a href="img/resume.pdf" download="정주효-이력서.pdf" target="_blank">이력서 확인하기</a>
                     </div>
                 </div>
             </article>
@@ -252,13 +251,13 @@
                             </div>
                         </div>
                         <div class="tool_list tool_AI">
-                            <span>AI</span>
+                            <span>AI(Illust)</span>
                             <div class="degree_bar">
                                 <div class="actual_degree"></div>
                             </div>
                         </div>
                         <div class="tool_list tool_PS">
-                            <span>PS</span>
+                            <span>PSD</span>
                             <div class="degree_bar">
                                 <div class="actual_degree"></div>
                             </div>
@@ -275,13 +274,15 @@
         </section>
         <!--포트폴리오 영역-->
         <section class="portfolio_section sectionName" data-aos="fade-up" data-aos-duration="2000">
-            <h1>PORTFOLIO</h1>
+            <h1>
+                PORTFOLIO <span>* 모든 작업물은 기존 사이트를 리뉴얼하여 디자인 및 구현하였습니다.</span>
+            </h1>
             <!--해비치-->
             <article class="site_contents site_haevichi">
                 <!--왼쪽 영역-->
                 <div class="left_area">
                     <div class="conceptBtn_container">
-                        <button class="conceptBtn">컨셉 설명</button>
+                        <button class="conceptBtn">리뉴얼 컨셉</button>
                     </div>
                     <div class="mockup_wrap">
                         <div class="mockup_pc">
@@ -295,6 +296,9 @@
                             <div class="mobile_img"><!--오버플로우 / 가려짐-->
                                 <img class="haevici_mobileImg" src="img/pofol-source/haevichi-mb.jpg" alt="해비치 호텔 모바일 버전 이미지">
                             </div>
+                        </div>
+                        <div class="origin_btn_container">
+                            <button class="oriSite_btn" onclick="window.open('http://www.haevichi.com');">* 기존 사이트 보기</button>
                         </div>
                     </div>
                 </div>
@@ -321,7 +325,11 @@
                         </dl>
                         <dl>
                             <dt>TOOL</dt>
-                            <dd>HTML, CSS, JS, AI, Figma</dd>
+                            <dd>HTML, CSS, JS, AI(Illust), Figma</dd>
+                        </dl>
+                        <dl>
+                            <dt>Visual Skills</dt>
+                            <dd>UI/UX 설정 및 활용, HTML5 & CSS3, jQuery & JavaScript, 웹폰트, Iconify 활용</dd>
                         </dl>
                         <dl class="color">
                             <dt>COLOR</dt>
@@ -329,13 +337,6 @@
                                 <span class="colorChip"></span>
                                 <span class="colorChip"></span>
                                 <span class="colorChip"></span>
-                            </dd>
-                        </dl>
-                        <dl class="level">
-                            <dt>LEVEL</dt>
-                            <dd>
-                                <span class="level_bar"></span>
-                                <span class="actual_level"></span>
                             </dd>
                         </dl>
                         <dl>
@@ -350,8 +351,11 @@
                         </div>
                     </div>
                     <p class="annotation">
-                        * MOBILE 버전은 프로토타입으로 확인 가능합니다.
+                        * MOBILE 버전<span>(QR)</span>은 프로토타입으로 확인 가능합니다.
                     </p>
+                    <div class="QR-code">
+                        <img src="img/pofol-source/haevichi-mobileQR.png" alt="해비치 호텔 모바일 큐알코드">
+                    </div>
                 </div>
             </article>
             <!--엘르-->
@@ -359,7 +363,7 @@
                 <!--왼쪽 영역(공통) / 오른쪽으로 위치 변경-->
                 <div class="left_area">
                     <div class="conceptBtn_container">
-                        <button class="conceptBtn">컨셉 설명</button>
+                        <button class="conceptBtn">리뉴얼 컨셉</button>
                     </div>
                     <div class="mockup_wrap">
                         <div class="mockup_pc">
@@ -367,6 +371,9 @@
                             <div class="pc_img"><!--오버플로우 / 가려짐-->
                                 <img class="elle_pcImg" src="img/pofol-source/elle-pc.jpg" alt="엘르 피시 버전 이미지">
                             </div>
+                        </div>
+                        <div class="origin_btn_container">
+                            <button class="oriSite_btn" onclick="window.open('https://www.elle.co.kr/');">* 기존 사이트 보기</button>
                         </div>
                     </div>
                 </div>
@@ -393,7 +400,11 @@
                         </dl>
                         <dl>
                             <dt>TOOL</dt>
-                            <dd>HTML, CSS, JS, PS, Figma</dd>
+                            <dd>HTML, CSS, JS, PSD, Figma</dd>
+                        </dl>
+                        <dl>
+                            <dt>Visual Skills</dt>
+                            <dd>UI/UX 설정 및 활용, HTML5 & CSS3, jQuery & JavaScript, 웹폰트, Feather Icons 활용</dd>
                         </dl>
                         <dl class="color">
                             <dt>COLOR</dt>
@@ -402,13 +413,6 @@
                                 <span class="colorChip"></span>
                                 <span class="colorChip"></span>
                                 <span class="colorChip"></span>
-                            </dd>
-                        </dl>
-                        <dl class="level">
-                            <dt>LEVEL</dt>
-                            <dd>
-                                <span class="level_bar"></span>
-                                <span class="actual_level"></span>
                             </dd>
                         </dl>
                         <dl>
@@ -429,7 +433,7 @@
                 <!--왼쪽 영역-->
                 <div class="left_area">
                     <div class="conceptBtn_container">
-                        <button class="conceptBtn">컨셉 설명</button>
+                        <button class="conceptBtn">리뉴얼 컨셉</button>
                     </div>
                     <div class="mockup_wrap">
                         <div class="mockup_pc">
@@ -449,6 +453,9 @@
                             <div class="mobile_img"><!--오버플로우 / 가려짐-->
                                 <img class="nivea_mobileImg" src="img/pofol-source/nivea-mb.jpeg" alt="니베아 모바일 버전 이미지">
                             </div>
+                        </div>
+                        <div class="origin_btn_container">
+                            <button class="oriSite_btn" onclick="window.open('https://www.nivea.co.kr/');">* 기존 사이트 보기</button>
                         </div>
                     </div>
                 </div>
@@ -475,7 +482,11 @@
                         </dl>
                         <dl>
                             <dt>TOOL</dt>
-                            <dd>HTML, CSS, JS, AI, PS, Figma</dd>
+                            <dd>HTML, CSS, JS, AI(Illust), PSD, Figma</dd>
+                        </dl>
+                        <dl>
+                            <dt>Visual Skills</dt>
+                            <dd>UI/UX 설정 및 활용, 디지털 합성, HTML5 & CSS3, jQuery & JavaScript, 웹폰트, Iconify 활용</dd>
                         </dl>
                         <dl class="color">
                             <dt>COLOR</dt>
@@ -484,13 +495,6 @@
                                 <span class="colorChip"></span>
                                 <span class="colorChip"></span>
                                 <span class="colorChip"></span>
-                            </dd>
-                        </dl>
-                        <dl class="level">
-                            <dt>LEVEL</dt>
-                            <dd>
-                                <span class="level_bar"></span>
-                                <span class="actual_level"></span>
                             </dd>
                         </dl>
                         <dl>
@@ -505,7 +509,10 @@
                             <button type="button" onclick="window.open('https://joohyo-hub.github.io/work-NIVEA/','nivea-mobile','width=430,height=845,location=no,status=no,scrollbars=yes');">MOBILE</button>
                         </div>
                     </div>
-                    <p class="annotation">* 반응형 웹페이지로, 모든 기기에서 확인 가능합니다.</p>
+                    <p class="annotation">* 반응형 웹페이지로, 모든 기기에서 확인 가능합니다.<span>(모바일 QR)</span></p>
+                    <div class="QR-code">
+                        <img src="img/pofol-source/nivea-mobileQR.png" alt="해비치 호텔 모바일 큐알코드">
+                    </div>
                 </div>
             </article>
         </section>

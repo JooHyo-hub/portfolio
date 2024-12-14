@@ -92,15 +92,6 @@ $(document).ready(function (){
             focusMenu(3);
         }
 
-        // //반응형으로 인한 오류!!!!!!!!!!!
-        // let windowScrollPosition = $(window).scrollTop() + $(window).height();  // 현재 스크롤 위치 + 뷰포트 높이
-        // let documentHeight = $(document).height(); // 문서의 전체 높이
-
-        // if (windowScrollPosition = documentHeight) {
-        //     $menu.eq(3).addClass('focusolor');
-        //     $sidemenu.eq(3).addClass('sideFocus');
-        // }
-
         //메뉴 컬러 변경
         function focusMenu(index) {
             $menu.eq(index).addClass('focusolor');
@@ -151,11 +142,11 @@ $(document).ready(function (){
     }
 });
     
-    
 //--배너 타이핑 효과
 $(document).ready(function () {
     const txtWrap = document.querySelector('.typing');
-    const txtString = 'WEB PUBLISHER UX•UI DESIGN';
+    // WEB PUBLISHER UX•UI DESIGN
+    const txtString = '목표를 향해 나아가는 정주효입니다.';
     const txtSpeed = 100;
     const txtDelay = 2000;
     let txtIndex = 0;

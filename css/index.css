@@ -1,7 +1,13 @@
 @font-face {
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 *{
@@ -16,12 +22,12 @@ a{
     color: #111;
 }
 button {
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
 }
 body{
     background: #FEFCF9;
     color: #111;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
 }
 header{
     width: 100%;
@@ -109,7 +115,7 @@ header{
 }
 main{
     width: 100%;
-    padding-top: 5.2%;
+    padding-top: 5.7%;
 }
 .main_banner_wrap{
     width: 100%;
@@ -125,7 +131,7 @@ main{
     width: 60%;
     height: 100vh;
     transform: skew(-6deg, -1deg) rotate(14deg);
-    font-family: "Judson", serif;
+    font-family: 'InkLipquid';
     position: relative;
     top: 0;
     left: 38%;
@@ -140,8 +146,8 @@ main{
     top: 30%;
 }
 .job_type_txt{
-    width: 8em;
-    height: 2.4em;
+    width: 100%;
+    height: 1.6em;
 }
 .typing:after {
     display: inline-block;
@@ -149,8 +155,8 @@ main{
     vertical-align: middle;
     content: '';
     background: #303030;
-    width: 2%;
-    height: 30%;
+    width: 1%;
+    height: 40%;
     animation: blink infinite 1s ease;
 }
 @keyframes blink { 
@@ -162,7 +168,20 @@ main{
     }
 }
 .porfol_banner_name{
-    float: right;
+    padding: 3% 0;
+    text-align: right;
+    font-size: 0.4em;
+    position: relative;
+}
+.porfol_banner_name::before{
+    display: block;
+    width: 30px;
+    height: 1px;
+    content: '';
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .banner_title span{
     display: block;
@@ -279,7 +298,8 @@ ul.profile_informat{
     margin-top: 16%;
     overflow: hidden;
 }
-.resume_btn button{
+.resume_btn a{
+    display: block;
     padding: 2% 5%;
     float: right;
     box-sizing: border-box;
@@ -292,7 +312,7 @@ ul.profile_informat{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.resume_btn button:hover{
+.resume_btn a:hover{
     background-color: #C16A3B;
 }
 article.self_introduct_keyword{
@@ -582,13 +602,24 @@ section.portfolio_section{
     margin-top: 2%;
     background: #575757;
 }
+.portfolio_section > h1 > span{
+    display: block;
+    margin-top: 0.4rem;
+    font-family: 'Pretendard';
+    font-size: 0.9rem;
+    color: #797979;
+}
 article.site_contents{
     width: 100%;
     position: relative;
-    padding-top: 28%;
+    padding-top: 18%;
 }
 article.site_haevichi{
+    overflow: hidden;
     padding-top: 4%;
+}
+article.site_elle{
+    overflow: hidden;
 }
 .left_area{
     width: 60%;
@@ -640,7 +671,7 @@ button.conceptBtn {
     left: 0;
     object-fit: cover;
     z-index: 20;
-    transition: all 4s ease-in-out;
+    transition: all 6s ease-in-out;
 }
 .mockup_mobile{
     width: 22%;
@@ -670,12 +701,25 @@ button.conceptBtn {
     left: 0;
     object-fit: cover;
     z-index: 20;
-    transition: all 4s ease-in-out;
+    transition: all 6s ease-in-out;
+}
+.origin_btn_container > button{
+    font-size: 0.8em;
+    border: none;
+    border-bottom: 1px solid #797979;
+    background: transparent;
+    color: #797979;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+.origin_btn_container > button:hover{
+    color: #000;
+    border-color: #000;
 }
 .right_area{
     width: 40%;
     overflow: hidden;
-    margin-top: 10%;
+    margin-top: 6%;
     padding-left: 8%;
     box-sizing: border-box;
 }
@@ -694,10 +738,10 @@ button.conceptBtn {
 .site_detail_explanat dl{
     clear: both;
     overflow: hidden;
-    margin: 4% 0;
+    margin: 6% 0;
 }
 .site_detail_explanat dl dt{
-    width: 4em;
+    width: 5.4em;
     overflow: hidden;
     margin-right: 6%;
     float: left;
@@ -724,27 +768,6 @@ dl.Period dd span img{
     top: -3px;
     left: 0;
     object-fit: contain;
-}
-dl.level dd{
-    overflow: hidden;
-    position: relative;
-    top: 10px;
-    left: 0;
-}
-dl.level span.level_bar{
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: #D4D4D4;
-}
-span.actual_level{
-    display: block;
-    height: 5px;
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    background: #3B3B3B;
-    z-index: 10;
 }
 dl.color span.colorChip{
     overflow: hidden;
@@ -776,6 +799,18 @@ p.annotation{
     font-size: 0.74em;
     color: #797979;
 }
+.QR-code{
+    width: 20%;
+    overflow: hidden;
+    padding: 0.4em;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+}
+.QR-code > img{
+    width: 100%;
+    object-fit: contain;
+}
 .site_haevichi button.conceptBtn {
     border-color: #395977;
     color: #0b2c4b;
@@ -788,9 +823,6 @@ p.annotation{
 }
 .site_haevichi span.engName{
     color: #415F89;
-}
-.site_haevichi span.actual_level{
-    width: 75%;
 }
 .site_haevichi .colorChip:nth-child(1){
     background: #FFFFFF;
@@ -831,9 +863,6 @@ p.annotation{
 }
 .site_elle span.engName{
     color: #644B3B;
-}
-.site_elle span.actual_level{
-    width: 60%;
 }
 .site_elle .colorChip:nth-child(1){
     background: #FFFFFF;
@@ -892,16 +921,13 @@ p.annotation{
     left: 0;
     object-fit: cover;
     z-index: 20;
-    transition: all 4s ease-in-out;
+    transition: all 6s ease-in-out;
 }
 .site_nivea .mobile_img > img{
     top: 0%; 
 }
 .site_nivea span.engName{
     color: #014DAF;
-}
-.site_nivea span.actual_level{
-    width: 78%;
 }
 .site_nivea .colorChip:nth-child(1){
     background: #FFFFFF;

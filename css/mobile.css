@@ -122,7 +122,8 @@
         font-size: 0.76em;
     }
     ul.font_sample {
-        justify-content: center;
+        justify-content:
+         center;
     }
     ul.font_sample li span {
         font-size: 1.9em;
@@ -134,6 +135,12 @@
     }
     .mobile_side_menu {
         width: 100%;
+    }
+    p.annotation > span{
+        display: none;
+    }
+    .QR-code{
+        display: none;
     }
 }
 @media screen and (max-width: 420px){

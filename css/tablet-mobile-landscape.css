@@ -125,6 +125,12 @@
     .sectionName > h1 {
         font-size: 2.2rem;
     }
+    .main_title {
+        font-size: 1.1em;
+    }
+    .portfolio_section > h1 > span{
+        font-size: 0.7rem;
+    }
     .profile_informat li {
         font-size: 0.7rem;
     }
@@ -132,13 +138,13 @@
         width: 10%;
         font-size: 0.56rem;
     }
-    .main_title {
-        font-size: 1.1em;
+    .origin_btn_container > button {
+        font-size: 0.74em;
     }
     .profile_right_wrap > p {
         font-size: 0.8em;
     }
-    .resume_btn button {
+    .resume_btn a {
         font-size: 0.7em;
     }
     .self_introduct_keyword > h1 {

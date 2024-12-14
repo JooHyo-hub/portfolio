@@ -80,7 +80,7 @@
         right: 14%;
         background: #ddd;
     }
-    .resume_btn button {
+    .resume_btn a {
         width: 100%;
         padding: 6% 0;
         font-size: 0.8em;
