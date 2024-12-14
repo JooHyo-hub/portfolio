@@ -99,6 +99,8 @@ $(document).ready(function (){
         }
 
         // 헤더 타이틀 텍스트 이벤트
+        let $scrollTop = $(window).scrollTop();
+        
         if ($scrollTop > 800) {    
             $('.name').fadeIn();
         } else {
