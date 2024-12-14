@@ -531,7 +531,8 @@ span.history_detail{
     gap: 38px;
 }
 .license_wrap > div{
-    width: 12rem;
+    /* width: 12rem; */
+    width: 50%;
     padding: 1em 0;
     text-align: center;
     border: 1px solid #939393;
