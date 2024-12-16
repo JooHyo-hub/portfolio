@@ -148,7 +148,7 @@ $(document).ready(function (){
 $(document).ready(function () {
     const txtWrap = document.querySelector('.typing');
     // WEB PUBLISHER UX•UI DESIGN
-    const txtString = '목표를 향해 나아가는 정주효입니다.';
+    const txtString = '목표를 향해 나아가는 웹 퍼블리셔입니다.';
     const txtSpeed = 100;
     const txtDelay = 2000;
     let txtIndex = 0;
