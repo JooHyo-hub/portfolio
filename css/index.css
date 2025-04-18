@@ -813,6 +813,54 @@ p.annotation{
     width: 100%;
     object-fit: contain;
 }
+.site_onnuri {
+    padding-top: 0% !important;
+}
+.site_onnuri .left_area{
+    float: right;
+}
+.site_onnuri .right_area{
+    padding-left: 0;
+    padding-right: 8%;
+}
+.site_onnuri .conceptBtn_container{
+    text-align: right;
+}
+.sitesite_onnuri_elle button.conceptBtn {
+    border-color: #B59E90;
+    color: #824016;
+}
+.site_onnuri .pc_img > img{
+    top: 0% ; 
+}
+.site_onnuri .mobile_img > img{
+    top: 0%; 
+}
+.site_onnuri span.engName{
+    color: #2a6aca;
+}
+.site_onnuri .colorChip:nth-child(1){
+    background: #FFFFFF;
+    border: 2px solid #CCCCCC;
+}
+.site_onnuri .colorChip:nth-child(2){
+    background: #eaecf2;
+    border: 2px solid #CCCCCC;
+}
+.site_onnuri .colorChip:nth-child(3){
+    background: #47557c;
+}
+.site_onnuri .colorChip:nth-child(4){
+    background: #111111;
+}
+.site_onnuri .btn_container button{
+    width: 24%;
+    background: #2a6aca;
+    color: #fff;
+}
+.site_onnuri .btn_container button:hover{
+    background: #47557c;
+}
 .site_haevichi button.conceptBtn {
     border-color: #395977;
     color: #0b2c4b;
