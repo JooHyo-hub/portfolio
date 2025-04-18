@@ -473,7 +473,7 @@ article.abillty_content_wrap{
 }
 .date_line{
     width: 0.4px;
-    height: 75%;
+    height: 77%;
     background: #686868;
     position: absolute;
     top: 10%;
@@ -574,6 +574,9 @@ span.history_detail{
     width: 80%;
 }
 .tool_JS .actual_degree{
+    width: 80%;
+}
+.tool_javascript .actual_degree{
     width: 70%;
 }
 .tool_AI .actual_degree{
