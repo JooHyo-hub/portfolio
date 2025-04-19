@@ -1705,3 +1705,1379 @@ li.sideFocus{ /*스크립트 제어*/
     font-family: "Judson", serif;
     font-weight: 400;
 }
+
+/* desktop */
+@media screen and (max-width: 1490px){
+    .sectionName > h1 {
+        font-size: 3rem;
+    }
+    li.history_title {
+        font-size: 0.94rem;
+    }
+    span.history_detail {
+        font-size: 0.9em;
+    }
+    .history_text_left li.date {
+        font-size: 0.9rem;
+    }
+    .date_line {
+        height: 80%;
+    }
+    .license_wrap > div {
+        font-size: 0.85em;
+    }
+    .tool_list > span {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1368px){
+    .main_title {
+        font-size: 2em;
+    }
+    .profile_informat span {
+        font-size: 0.8rem;
+    }
+    .profile_informat li {
+        font-size: 1rem;
+    }
+    .profile_right_wrap > p {
+        font-size: 1.04em;
+        line-height: 1.64em;
+    }
+    .history_text_left ul {
+        margin: 0.6em 0;
+    }
+    li.history_title {
+        width: auto;
+        margin-left: 9%;
+        float: none;
+        font-size: 0.9rem;
+    }
+    .history_text_left li.date {
+        width: auto;
+        float: none;
+        font-size: 0.9rem;
+    }
+    .date_line {
+        display: none;
+    }
+    .license_wrap > div {
+        font-size: 0.75em;
+    }
+    .tool_list > span {
+        font-size: 0.9rem;
+    }
+    .self_introduct_keyword > h1 {
+        font-size: 1.8rem;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+    .title span {
+        font-size: 1.6rem;
+    }
+    .keyword_container > p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .other_view_Left_txt > h1 {
+        line-height: 1.5em;
+        font-size: 1.8em;
+    }
+    .other_view_list h3 {
+        font-size: 1.2rem;
+    }
+    .other_view_list h3 > span {
+        font-size: 1.6rem;
+    }
+    .other_view_list p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .contact_information_txt {
+        font-size: 1.14em;
+        line-height: 1.9em;
+    }
+    .contact_title > h1 {
+        font-size: 2.2em;
+    }
+    .contact_title > p {
+        font-size: 0.9em;
+    }
+    
+}
+
+
+/* laptop-tablet */
+@media screen and (max-width: 1280px){
+    .banner_title > div {
+        font-size: 3.6em;
+    }
+    .banner_title > p {
+        font-size: 1.18em;
+    }
+    .profile_informat li {
+        font-size: 0.9rem;
+    }
+    .profile_right_wrap {
+        right: 5%;
+    }
+    .main_title {
+        font-size: 1.6em;
+    }
+    .profile_right_wrap > p {
+        font-size: 1em;
+        line-height: 1.6em;
+    }
+    .resume_btn a {
+        font-size: 0.9em;
+    }
+    .history_text_left ul {
+        margin: 0.6em 0;
+    }
+    .history_text_left li.date {
+        width: auto;
+        float: none;
+        font-size: 0.9rem;
+    }
+    .date_line {
+        height: 83%;
+        top: 6%;
+        left: 10.5%;
+    }
+    li.history_title {
+        width: auto;
+        margin-left: 9%;
+        float: none;
+        font-size: 0.9rem;
+    }
+    .license_wrap {
+        gap: 12px;
+    }
+    .clone_coding_wrap > h1::before {
+        width: 30%;
+    }
+    .clone_coding_wrap > h1::after {
+        width: 30%;
+    }
+    .clone_work_container h1 {
+        font-size: 1.6rem;
+    }
+    .clone_coding_wrap > p {
+        font-size: 1rem;
+    }
+    .clone_coding_wrap .annotation{
+        font-size: 0.9em;
+    }
+    .design_artwork_wrap > p {
+        font-size: 1rem;
+    }
+    .design_artwork_wrap > h1::before {
+        width: 25%;
+    }
+    .design_artwork_wrap > h1::after {
+        width: 25%;
+    }
+    .artwork_title {
+        font-size: 1.08rem;
+    }
+    .viewmore_btn button {
+        font-size: 0.8em;
+    }
+    /*컨셉 모달창*/
+    h2.modal_name {
+        font-size: 2.2em;
+    }
+    .modal_name > span {
+        font-size: 0.39em;
+    }
+    h3.modal_title {
+        font-size: 1.4em;
+    }
+    .overview_txt > p {
+        font-size: 0.9em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.9em;
+    }
+    .devicesBtn_inner_box {
+        margin-top: 7% !important;
+    }
+    .devicesBtn_inner_box > p {
+        font-size: 0.7em;
+    }
+    .colors_typograph_wrap {
+        padding-top: 8%;
+    }
+    ul.chips_square > li > span {
+        font-size: 0.68em;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.9em;
+    }
+    ul.font_sample {
+        font-size: 0.78em;
+    }
+}
+@media screen and (max-width: 1200px){
+    .name{
+        display: none !important;
+    }
+    .banner_title > div {
+        font-size: 3em;
+    }
+    .banner_title > p {
+        font-size: 1.1em;
+    }
+    .self_introduct_keyword > h1 {
+        font-size: 1.6rem;
+    }
+    .title {
+        font-size: 1.16rem;
+    }
+    .title span {
+        font-size: 1.48rem;
+    }
+    .keyword_container > p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    .other_view_Left_txt > h1 {
+        line-height: 1.4em;
+        font-size: 1.6rem;
+    }
+    .other_view_list h3 {
+        font-size: 1.16rem;
+    }
+    .other_view_list h3 > span {
+        font-size: 1.68rem;
+    }
+    .contact_information_txt {
+        font-size: 1em;
+        line-height: 1.74em;
+    }
+    .contact_title > h1 {
+        font-size: 2.06em;
+    }
+    .contact_title > p {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 1158px){
+    .sectionName > h1 {
+        font-size: 2.7rem;
+    }
+    .site_name {
+        font-size: 0.78em;
+    }
+    .site_detail_explanat dl dt {
+        font-size: 0.9rem;
+    }
+    .site_detail_explanat dl dd {
+        font-size: 0.84rem;
+    }
+    .btn_container button {
+        font-size: 0.78em;
+    }
+    p.annotation {
+        font-size: 0.7em;
+    }
+    .clone_coding_wrap > p {
+        font-size: 0.9rem;
+    }
+    .clone_coding_wrap .annotation {
+        font-size: 0.8em;
+    }
+    .design_artwork_wrap > p {
+        font-size: 0.9rem;
+    }
+    .design_artwork_wrap > p {
+        font-size: 1rem;
+    }
+    /*컨셉 모달창*/
+    h2.modal_name {
+        font-size: 1.9em;
+        padding-bottom: 0.3em;
+    }
+    .closeBtn {
+        width: 1.8em;
+        height: 1.8em;
+    }
+    .devicesBtn_inner_box {
+        margin: 0 auto;
+        float: none;
+    }
+    .thumImg_overview_container {
+        margin-top: 2%;
+    }
+    .thumImg {
+        display: none;
+    }
+    .overview_txt {
+        padding-left: 0;
+    }
+    .colors_typograph_wrap {
+        padding-top: 14%;
+    }
+    .colors_container {
+        width: 30%;
+    }
+    ul.chips_square {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    ul.chips_square > li {
+        height: 3.4em;
+    }
+}
+@media screen and (max-width: 1091px){
+    .main_title {
+        font-size: 1.5em;
+    }
+    .profile_informat span {
+        font-size: 0.74rem;
+    }
+    .profile_informat li {
+        font-size: 0.84rem;
+    }
+    .profile_right_wrap > p {
+        font-size: 0.9em;
+        line-height: 1.5em;
+    }
+}
+@media screen and (max-width: 1038px){
+    .profile_informat span {
+        font-size: 0.7rem;
+    }
+    .profile_informat li {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* tablet */
+@media screen and (max-width: 1024px){
+    .head_inner_box ul{
+        justify-content: space-around;
+        gap: 0;
+    }
+    .head_inner_box ul li {
+        font-size: 1.24em;
+    }
+    .banner_title > div {
+        font-size: 2.9em;
+    }
+    .banner_title > p {
+        font-size: 1.04em;
+    }
+    section.about_section{
+        padding: 0;
+    }
+    .about_section > h1 {
+        padding: 0 8rem;
+    }
+    .profile_left_wrap {
+        width: 100%;
+        float: none;
+        position: relative;
+    }
+    .profile_img_container {
+        width: 50%;
+        float: left;
+        border: none;
+    }
+    .profile_img_container img {
+        width: 40%;
+        position: relative;
+        top: 0;
+        left: 52%;
+        border: 6px solid #D5D5D5;
+    }
+    ul.profile_informat {
+        width: 50%;
+        float: left;
+        padding-left: 0%;
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        transform: translateY(-50%);
+    }
+    .profile_informat li{
+        margin-left: 10%;
+        font-size: 0.86rem;
+    }
+    .profile_informat span{
+        width: 16%;
+    }
+    .profile_right_wrap {
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding-right: 0;
+        position: static;
+    }
+    .main_title span::before{
+        content: '';
+        display: block;
+        width: 10%;
+        margin: 0 auto;
+        margin-bottom: 6%;
+        height: 0.6px;
+        background: #333;
+    }
+    .profile_right_wrap > p {
+        width: 60%;
+        margin: 4% auto;
+        font-size: 0.94em;
+    }
+    .resume_btn {
+        width: 6em;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 111%;
+        right: 14%;
+        background: #ddd;
+    }
+    .resume_btn a {
+        width: 100%;
+        padding: 6% 0;
+        font-size: 0.8em;
+        margin-right: 0;
+        float: none;
+    }
+    article.self_introduct_keyword{
+        padding: 0 8rem;
+        box-sizing: border-box;
+    }
+    .self_introduct_keyword > h1 {
+        font-size: 1.6rem;
+    }
+    .title {
+        font-size: 1.1rem;
+    }
+    .title span {
+        font-size: 1.5rem;
+    }
+    .keyword_container > p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    article.other_view_wrap{
+        padding: 0 8rem;
+        box-sizing: border-box;
+    }
+    .other_view_Left_txt > h1 {
+        font-size: 1.6em;
+    }
+    .other_view_list h3 {
+        font-size: 1.1rem;
+    }
+    .other_view_list h3 > span {
+        font-size: 1.5rem;
+    }
+    .other_view_list p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+    .abillty_section > h1 {
+        font-size: 2.5rem;
+    }
+    article.abillty_content_wrap {
+        display: block;
+    }
+    .abillty_content_wrap > div {
+        width: 100%;
+    }
+    .history_text_left {
+        border: none;
+    }
+    .date_line {
+        display: block;
+        height: 84%;
+        top: 9%;
+        left: 5.4%;
+    }
+    .tool_ability_wrap {
+        padding: 5% 0;
+    }
+    li.history_title {
+        width: auto;
+        float: left;
+        margin-left: 4%;
+        font-size: 0.88rem;
+    }
+    .history_text_left li.date {
+        width: 30%;
+        float: left;
+        font-size: 0.84rem;
+    }
+    .tool_list {
+        margin: 1.3em 0;
+    }
+    .portfolio_section > h1 {
+        font-size: 2.5rem;
+    }
+    article.site_contents {
+        height: auto;
+        max-height: 100%;
+        padding-top: 15%;
+        position: relative;
+    }
+    .mockup_wrap {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .left_area {
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+        position: relative;
+    }
+    .right_area {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 8%;
+        padding: 0 20%;
+    }
+    .site_elle .left_area {
+        float: none;
+    }
+    .site_elle .right_area {
+        padding: 0 20%;
+    }
+    .btn_container button {
+        width: 25%;
+        padding: 1.6% 0;
+    }
+    button.conceptBtn {
+        padding: 1.2% 2%;
+        font-size: 0.7em;
+        position: absolute;
+        right: 6%;
+        bottom: -26%;
+        z-index: 10;
+    }
+    .clone_coding_wrap > h1 {
+        font-size: 2.5rem;
+    }
+    .clone_coding_wrap > p{
+        font-size: 0.86rem;
+    }
+    .clone_work_container h1 {
+        font-size: 1.7rem;
+    }
+    .clone_coding_wrap .annotation {
+        font-size: 0.8em;
+    }
+    .design_artwork_wrap > h1 {
+        font-size: 2.5rem;
+    }
+    .design_artwork_wrap > p {
+        font-size: 0.9rem;
+    }
+    .artwork_list {
+        margin: 0 24px;
+    }
+    .artwork_img_box {
+        height: 30vh;
+    }
+    .artwork_title {
+        font-size: 0.9rem;
+    }
+    .viewmore_btn button {
+        width: 50%;
+        padding: 5% 0;
+        font-size: 0.7em;
+    }   
+    .contact_information_txt {
+        font-size: 0.86em;
+        line-height: 1.7em;
+    }
+    .contact_title > h1 {
+        font-size: 1.4em;
+    }
+    .contact_title > p {
+        font-size: 0.74em;
+        margin: 1.6% 0;
+    }
+    /*컨셉 모달창*/
+    h2.modal_name {
+        padding-top: 0;
+    }
+    .colors_typograph_wrap {
+        padding-top: 0;
+    }
+    .colors_container {
+        float: none;
+        margin-top: 1em;
+    }
+    ul.chips_square {
+        display: flex;
+    }
+    .colors_container {
+        width: 100%;
+    }
+    .typograph_container {
+        margin-top: 2em;
+    }
+    .typograph_container {
+        float: none;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 980px){
+    .banner_title {
+        min-height: 500px;
+        max-height: 720px;
+        height: 77vh;
+    }
+    .banner_title > div {
+        font-size: 2.6em;
+    }
+    .banner_title > p {
+        font-size: 0.9em;
+    }
+    article.other_view_wrap{
+        width: 100%;
+        padding: 8rem 0;
+        box-sizing: border-box;
+        float: none;
+        background: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.331)), url(../img/me/gray.jpg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    .other_view_right_Img {
+        display: none;
+    }
+    .other_view_Left_txt {
+        width: 100%;
+        padding: 0 8rem;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    .other_view_Left_txt > h1 {
+        font-size: 1.8em;
+    }
+    .other_view_list h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .other_view_list h3 > span {
+        font-size: 1.9rem;
+    }
+    .other_view_list p {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 910px){
+    .banner_title > div {
+        font-size: 2.4em;
+    }
+    .banner_title > p {
+        font-size: 0.88em;
+    }
+    .self_introduct_keyword > h1 {
+        font-size: 1.4rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    .title span {
+        font-size: 1.3rem;
+    }
+    .keyword_container > p {
+        font-size: 0.84rem;
+    }
+    .clone_coding_wrap > h1::before {
+        display: none;
+    }
+    .clone_coding_wrap > h1::after {
+        display: none;
+    }
+    .design_artwork_wrap > h1::before {
+        display: none;
+    }
+    .design_artwork_wrap > h1::after {
+        display: none;
+    }
+}
+@media screen and (max-width: 850px){
+    .banner_title > div {
+        font-size: 2.2em;
+    }
+    .banner_title {
+        height: 68vh;
+    }
+    .resume_btn {
+        right: 17%;
+    }
+    .left_area {
+        width: 100%;
+    }
+    .right_area {
+        padding: 0 8%;
+    }
+    .site_detail_explanat {
+        margin: 8% 0;
+    }
+    .site_elle .right_area {
+        padding: 0 8%;
+    }
+    button.conceptBtn {
+        bottom: -24%;
+    }
+    article.clone_work_container {
+        display: block;
+    }
+    article.clone_work_container > div {
+        width: 100%;
+        padding: 6% 5%;
+    }
+    .artwork_list_container {
+        margin-top: 8%;
+    }
+    .artwork_list_inner_box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    .artwork_list {
+        margin: 0;
+        margin-bottom: 10%;
+    }
+    .artwork_img_box {
+        height: 38vh;
+    }
+    .artwork_title {
+        font-size: 0.9rem;
+    }
+    .viewmore_btn button {
+        width: 34%;
+        padding: 1.6% 0;
+        font-size: 0.78em;
+    }
+}
+@media screen and (max-width: 840px){
+    .sectionName > h1 {
+        font-size: 2.4rem;
+    }
+    span.circle {
+        display: none;
+    }
+    .circle_line::before {
+        width: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .keyword_text_wrap {
+        display: block;
+    }
+    .keyword_container {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 5%;
+    }
+    .title {
+        font-size: 1.1rem;
+        margin-bottom: 1%;
+    }
+    .title span {
+        font-size: 1.5rem;
+        display: inline-block;
+        margin-bottom: 1%;
+    }
+    .keyword_container > p {
+        font-size: 0.9rem;
+    }
+    .other_view_Left_txt > h1 {
+        font-size: 1.6em;
+    }
+    .other_view_list h3 {
+        font-size: 1.2rem;
+    }
+    .other_view_list h3 > span {
+        font-size: 1.7rem;
+    }
+    .other_view_list p {
+        font-size: 0.94rem;
+    }
+    /*컨셉 모달창*/
+    .site_modal {
+        padding: 3.13em 3em;
+    }
+    h2.modal_name {
+        font-size: 1.7em;
+        padding-top: 0.4em;
+    }
+    h3.modal_title {
+        font-size: 1.36em;
+    }
+    .overview_txt > p {
+        font-size: 0.84em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.84em;
+    }
+    .devicesBtn > button {
+        font-size: 0.7em;
+        padding: 0.4em 0;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.84em;
+    }
+    ul.font_sample {
+        font-size: 0.72em;
+    }
+}
+
+
+/* tablet-mobile-landscape */
+@media screen and (max-width: 767px){
+    .head_inner_box > ul{
+        display: none;
+    }
+    .hamb_icon{
+        display: block;
+    }
+    .name {
+        display: block !important;
+        font-size: 1.4rem;
+        top: 50%;
+        left: 2.3%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    .porfol_banner_name{
+        display: none;
+    }
+    .main_title {
+        font-size: 1.4em;
+    }
+    .card_img_box {
+        width: 84%;
+    }
+    .contact_title {
+        left: 14%;
+    }
+}
+@media screen and (max-width: 770px){
+    .other_view_list p {
+        font-size: 0.94rem;
+    }
+    .history_text_left li.date {
+        width: 35%;
+    }
+    li.history_title {
+        font-size: 0.8rem;
+    }
+    .history_text_left li.date {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 684px){
+    .about_section > h1 {
+        padding: 0 4rem;
+    }
+    .main_title {
+        font-size: 1.3em;
+    }
+    .profile_img_container {
+        width: 100%;
+        float: none;
+    }
+    .profile_img_container img {
+        width: 30%;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    ul.profile_informat {
+        width: 100%;
+        float: none;
+        padding-left: 30%;
+        position: relative;
+        top: 4px;
+        left: 54%;
+        transform: translateX(-50%);
+    }
+    .profile_informat li {
+        margin: 2% 0;
+        font-size: 0.82rem;
+    }
+    .profile_informat span {
+        width: 10%;
+        font-size: 0.66rem;
+    }
+    .profile_right_wrap > p {
+        font-size: 0.9em;
+    }
+    .resume_btn {
+        bottom: 106%;
+        right: 12%;
+    }
+    article.self_introduct_keyword {
+        padding: 0 4rem;
+    }
+    .other_view_Left_txt {
+        padding: 0 4rem;
+    }
+    section.abillty_section {
+        padding: 0 4rem;
+    }
+    section.portfolio_section {
+        padding: 6rem 4rem;
+    }
+    section.clone_coding_wrap {
+        padding: 0 4rem;
+    }
+    section.design_artwork_wrap {
+        padding: 11rem 4rem;
+    }
+}
+@media screen and (max-width: 630px){
+    /*컨셉 모달창*/
+    .modal_inner_wrap {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 610px){
+    .name {
+        font-size: 1.2rem;
+    }
+    .banner_title {
+        min-height: 445px;
+        max-height: 488px;
+        height: 55vh;
+    }
+    .banner_title > div {
+        font-size: 2em;
+    }
+    .banner_title > p {
+        font-size: 0.8em;
+    }
+    .sectionName > h1 {
+        font-size: 2.2rem;
+    }
+    .main_title {
+        font-size: 1.1em;
+    }
+    .portfolio_section > h1 > span{
+        font-size: 0.7rem;
+    }
+    .profile_informat li {
+        font-size: 0.7rem;
+    }
+    .profile_informat span {
+        width: 10%;
+        font-size: 0.56rem;
+    }
+    .origin_btn_container > button {
+        font-size: 0.74em;
+    }
+    .profile_right_wrap > p {
+        font-size: 0.8em;
+    }
+    .resume_btn a {
+        font-size: 0.7em;
+    }
+    .self_introduct_keyword > h1 {
+        font-size: 1.1rem;
+    }
+    .title {
+        font-size: 0.9rem;
+    }
+    .title span {
+        font-size: 1.2rem;
+    }
+    .keyword_container > p {
+        font-size: 0.8rem;
+    }
+    article.other_view_wrap {
+        background: none;
+        padding: 0;
+        margin-top: 6rem;
+    }
+    .other_view_Left_txt > h1 {
+        font-size: 1.24em;
+    }
+    .other_view_Left_txt {
+        color: #111;
+    }
+    .other_view_list h3 {
+        font-size: 0.9rem;
+    }
+    .other_view_list h3 > span {
+        font-size: 1.2rem;
+    }
+    .other_view_list p {
+        font-size: 0.8rem;
+    }
+    .abillty_section > h1 {
+        font-size: 2.2rem;
+    }
+    .date_line {
+        display: none;
+    }
+    .history_text_left li.date {
+        width: 100%;
+    }
+    .history_text_left li.date::before {
+        margin-right: 2.8%;
+    }
+    li.history_title {
+        width: 100%;
+    }
+    .portfolio_section > h1{
+        font-size: 2.2rem;
+    }
+    .site_name {
+        font-size: 0.7em;
+    }
+    .site_detail_explanat dl dt {
+        font-size: 0.8rem;
+    }
+    .site_detail_explanat dl dd {
+        font-size: 0.78rem;
+    }
+    dl.Period dd span {
+        width: 18px;
+        height: 18px;
+    }
+    dl.Period dd span img {
+        top: -4px;
+    }
+    .design_artwork_wrap > h1{
+        font-size: 2.2rem;
+    }
+    .design_artwork_wrap > p {
+        font-size: 0.7rem;
+    }
+    .artwork_list_inner_box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6rem;
+    }
+    .artwork_img_box{
+        background: none;
+    }
+    .clone_coding_wrap > h1 {
+        font-size: 2.2rem;
+    }
+    .clone_coding_wrap > p {
+        font-size: 0.7rem;
+    }
+    .clone_work_container h1 {
+        font-size: 1.3rem;
+    }
+    .clone_coding_wrap .annotation {
+        font-size: 0.7em;
+    }
+    .contact_title > h1 {
+        font-size: 1.3em;
+    }
+    .contact_information_txt {
+        font-size: 0.76em;
+    }
+    .contact_title > p {
+        font-size: 0.62em;
+    }
+    .contact_information_txt {
+        bottom: 50%;
+    }
+    .contact_title {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: -70vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact_title > h1 {
+        font-size: 1.6em;
+    }
+    .contact_title > p {
+        font-size: 0.76em;
+    }
+    footer > div {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 540px){
+    /*컨셉 모달창*/
+    .font_wrap {
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .sectionName > h1 {
+        font-size: 2rem;
+    }
+    .license_wrap > div {
+        font-size: 0.66em;
+    }
+    .tool_list > span {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 479px) {
+    .banner_title {
+        height: 50vh;
+        left: 34%;
+    }
+    .job_type_txt {
+        width: 7em;
+    }
+    .about_section > h1 {
+        padding: 0 2rem;
+    }
+    .keyword_container {
+        margin-top: 1.4em;
+    }
+    .profile_img_container img {
+        width: 38%;
+    }
+    ul.profile_informat {
+        left: 50%;
+    }
+    .profile_right_wrap > p {
+        width: 80%;
+    }
+    .resume_btn {
+        right: 8%;
+    }
+    .license_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    article.self_introduct_keyword {
+        padding: 0 2rem;
+    }
+    .other_view_Left_txt {
+        padding: 0 2rem;
+    }
+    .other_view_list p {
+        float: left;
+        padding-left: 0;
+    }
+    section.abillty_section {
+        padding: 0 2rem;
+    }
+    section.portfolio_section {
+        padding: 6rem 2rem;
+    }
+    button.conceptBtn {
+        bottom: -27%;
+    }
+    .site_name span.krName{
+        display: none;
+    }
+    section.clone_coding_wrap {
+        padding: 0 2rem;
+    }
+    section.design_artwork_wrap {
+        padding: 11rem 2rem;
+    }
+    .contact_title {
+        top: -75vw;
+    }
+    /*컨셉 모달창*/
+    .modal_inner_wrap {
+        height: 95%;
+    }
+    .closeBtn {
+        width: 1.4em;
+        height: 1.4em;
+        top: 3%;
+        right: 5%;
+    }
+    .site_modal {
+        padding: 3.13em 1.4em;
+    }
+    h2.modal_name{
+        padding-top: 0;
+    }
+    h3.modal_title{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .overview_txt > p {
+        font-size: 0.76em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.76em;
+    }
+    ul.concept_keyword{
+        width: 100%;
+        overflow: hidden;
+        padding: 0 2em;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    ul.concept_keyword li {
+        float: none;
+        margin-right: 0;
+    }
+    .devicesBtn_inner_box {
+        position: absolute;
+        left: 50%;
+        bottom: 3em;
+        transform: translateX(-50%);
+    }
+    .colors_typograph_wrap {
+        padding-top: 1.2em;
+    }
+    ul.chips_square > li {
+        height: 3em;
+    }
+    .typograph_container {
+        margin-top: 2em;
+    }
+    .font_wrap{
+        display: block;
+        text-align: center;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.76em;
+    }
+    ul.font_sample {
+        justify-content:
+         center;
+    }
+    ul.font_sample li span {
+        font-size: 1.9em;
+    }
+}
+@media screen and (max-width: 450px){
+    button.conceptBtn {
+        bottom: -29%;
+    }
+    .mobile_side_menu {
+        width: 100%;
+    }
+    p.annotation > span{
+        display: none;
+    }
+    .QR-code{
+        display: none;
+    }
+}
+@media screen and (max-width: 420px){
+    .banner_title {
+        left: 30%;
+    }
+    button.conceptBtn {
+        bottom: -30%;
+    }
+    footer > div {
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .banner_title {
+        left: 27%;
+    }
+    .banner_title > div {
+        font-size: 1.9em;
+    }
+    .profile_img_container img {
+        width: 40%;
+    }
+    .profile_informat span {
+        border: none;
+        text-align: left;
+    }
+    button.conceptBtn {
+        font-size: 0.6em;
+    }
+    p.annotation {
+        font-size: 0.6em;
+    }
+}
+@media screen and (max-width: 360px){
+    .banner_title {
+        left: 22%;
+    }
+    .site_name {
+        font-size: 0.6em;
+    }
+    .site_detail_explanat dl dt {
+        font-size: 0.74rem;
+    }
+    .site_detail_explanat dl dd {
+        font-size: 0.7rem;
+    }
+    button.conceptBtn {
+        font-size: 0.4em;
+        bottom: -27%;
+    }
+    .contact_title > h1 {
+        font-size: 1.5em;
+    }
+    .contact_title > p {
+        font-size: 0.6em;
+    }
+    .contact_information_txt {
+        font-size: 0.7em;
+    }
+}
+@media screen and (max-height: 835px){
+    /*컨셉 모달창*/
+    h2.modal_name {
+        font-size: 1.5em;
+    }
+    h3.modal_title {
+        font-size: 1.1em;
+    }
+    .overview_txt > p {
+        font-size: 0.7em;
+    }
+    ul.concept_keyword li {
+        font-size: 0.7em;
+    }
+    ul.chips_square > li > span {
+        font-size: 0.6em;
+    }
+    .font_wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+    .font_wrap > div span.fontName {
+        font-size: 0.7em;
+    }
+    ul.font_sample {
+        font-size: 0.64em;
+    }
+    .devicesBtn_inner_box > p {
+        font-size: 0.62em;
+    }
+}
+@media screen and (max-height: 770px){
+    /*컨셉 모달창*/
+    .font_wrap {
+        margin-top: 3%;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .font_wrap > div {
+        width: 50%;
+    }
+    .devicesBtn_inner_box {
+        bottom: 2% !important;
+    }
+}
+@media screen and (max-height: 720px){
+    .back_text{
+        display: none;
+    }
+}
