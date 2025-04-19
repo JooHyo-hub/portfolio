@@ -820,15 +820,16 @@ p.annotation{
     float: right;
 }
 .site_onnuri .right_area{
+    padding-top: 3%;
     padding-left: 0;
     padding-right: 8%;
 }
 .site_onnuri .conceptBtn_container{
     text-align: right;
 }
-.sitesite_onnuri_elle button.conceptBtn {
-    border-color: #B59E90;
-    color: #824016;
+.site_onnuri button.conceptBtn {
+    border-color: #47557c;
+    color: #263254;
 }
 .site_onnuri .pc_img > img{
     top: 0% ; 
@@ -844,14 +845,14 @@ p.annotation{
     border: 2px solid #CCCCCC;
 }
 .site_onnuri .colorChip:nth-child(2){
+    background: #9a2626;
+}
+.site_onnuri .colorChip:nth-child(3){
     background: #eaecf2;
     border: 2px solid #CCCCCC;
 }
-.site_onnuri .colorChip:nth-child(3){
-    background: #47557c;
-}
 .site_onnuri .colorChip:nth-child(4){
-    background: #111111;
+    background: #47557c;
 }
 .site_onnuri .btn_container button{
     width: 24%;
@@ -859,7 +860,7 @@ p.annotation{
     color: #fff;
 }
 .site_onnuri .btn_container button:hover{
-    background: #47557c;
+    background: #043d93;
 }
 .site_haevichi button.conceptBtn {
     border-color: #395977;

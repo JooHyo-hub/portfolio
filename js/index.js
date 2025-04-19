@@ -178,6 +178,29 @@ $(document).ready(function () {
 
 //--포폴 목업 마우스 호버 이벤트
 $(document).ready(function(){
+    //액츠빌리지
+    let $onnuri_PC = $('.onnuri_pcImg');
+    let $onnuri_TB = $('.onnuri_tabletImg');
+    let $onnuri_MB = $('.onnuri_mobileImg');
+
+    $onnuri_PC.hover(function(){
+        $(this).css({'top' : '-248%'});
+    },function(){
+        $(this).css({'top' : '0%'});
+    });
+    
+    $onnuri_TB.hover(function(){
+        $(this).css({'top' : '-305%'});
+    },function(){
+        $(this).css({'top' : '0%'});
+    });
+
+    $onnuri_MB.hover(function(){
+        $(this).css({'top' : '-147%'});
+    },function(){
+        $(this).css({'top' : '0%'});
+    });
+
     //해비치
     let $heavichi_PC = $('.haevici_pcImg');
     let $heavichi_MB = $('.haevici_mobileImg');
