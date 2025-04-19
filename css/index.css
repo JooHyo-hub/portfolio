@@ -473,7 +473,7 @@ article.abillty_content_wrap{
 }
 .date_line{
     width: 0.4px;
-    height: 77%;
+    height: 76%;
     background: #686868;
     position: absolute;
     top: 10%;
@@ -485,14 +485,17 @@ article.abillty_content_wrap{
     margin: 1.9em 0;
     clear: both;
     position: relative;
+    display: flex;
+    gap: 2%;
+    align-items: baseline;
+    justify-content: space-between;
 }
 .history_text_left li{
     line-height: 1.5rem;
 }
 .history_text_left li.date{
-    width: 35%;
+    flex: 0 0 35%;
     font-size: 1rem;
-    float: left;
     color: #888888;
 }
 .history_text_left li.date::before{
@@ -508,7 +511,6 @@ li.history_title{
     width: 65%;
     box-sizing: border-box;
     text-align: left;
-    float: right;
     font-size: 1.125rem;
     font-weight: 500;
 }
@@ -616,9 +618,12 @@ article.site_contents{
     position: relative;
     padding-top: 18%;
 }
+article.site_onnuri{
+    padding-top: 7% !important;
+}
 article.site_haevichi{
     overflow: hidden;
-    padding-top: 4%;
+    padding-top: 6%;
 }
 article.site_elle{
     overflow: hidden;
@@ -820,7 +825,7 @@ p.annotation{
     float: right;
 }
 .site_onnuri .right_area{
-    padding-top: 3%;
+    margin-top: 3%;
     padding-left: 0;
     padding-right: 8%;
 }
@@ -1745,18 +1750,20 @@ li.sideFocus{ /*스크립트 제어*/
         line-height: 1.64em;
     }
     .history_text_left ul {
-        margin: 0.6em 0;
+        flex-direction: column;
+    }
+    .history_text_left ul li {
+        width: 100%;
     }
     li.history_title {
-        width: auto;
-        margin-left: 9%;
-        float: none;
         font-size: 0.9rem;
+        padding-left: 5%;
     }
     .history_text_left li.date {
-        width: auto;
-        float: none;
         font-size: 0.9rem;
+    }
+    .history_text_left li.date::before {
+        margin-right: 4%;
     }
     .date_line {
         display: none;
@@ -1835,21 +1842,10 @@ li.sideFocus{ /*스크립트 제어*/
     .history_text_left ul {
         margin: 0.6em 0;
     }
-    .history_text_left li.date {
-        width: auto;
-        float: none;
-        font-size: 0.9rem;
-    }
     .date_line {
         height: 83%;
         top: 6%;
         left: 10.5%;
-    }
-    li.history_title {
-        width: auto;
-        margin-left: 9%;
-        float: none;
-        font-size: 0.9rem;
     }
     .license_wrap {
         gap: 12px;
@@ -2194,21 +2190,12 @@ li.sideFocus{ /*스크립트 제어*/
     .date_line {
         display: block;
         height: 84%;
-        top: 9%;
         left: 5.4%;
     }
     .tool_ability_wrap {
         padding: 5% 0;
     }
-    li.history_title {
-        width: auto;
-        float: left;
-        margin-left: 4%;
-        font-size: 0.88rem;
-    }
     .history_text_left li.date {
-        width: 30%;
-        float: left;
         font-size: 0.84rem;
     }
     .tool_list {
@@ -2230,20 +2217,14 @@ li.sideFocus{ /*스크립트 제어*/
     .left_area {
         width: 80%;
         margin: 0 auto;
-        float: none;
+        float: none !important;
         position: relative;
     }
     .right_area {
         width: 100%;
         margin: 0 auto;
-        margin-top: 8%;
-        padding: 0 20%;
-    }
-    .site_elle .left_area {
-        float: none;
-    }
-    .site_elle .right_area {
-        padding: 0 20%;
+        margin-top: 8% !important;
+        padding: 0 20% !important;
     }
     .btn_container button {
         width: 25%;
@@ -2417,9 +2398,6 @@ li.sideFocus{ /*스크립트 제어*/
     .left_area {
         width: 100%;
     }
-    .right_area {
-        padding: 0 8%;
-    }
     .site_detail_explanat {
         margin: 8% 0;
     }
@@ -2556,6 +2534,9 @@ li.sideFocus{ /*스크립트 제어*/
     .main_title {
         font-size: 1.4em;
     }
+    .right_area {
+        padding: 0 !important;
+    }
     .card_img_box {
         width: 84%;
     }
@@ -2566,9 +2547,6 @@ li.sideFocus{ /*스크립트 제어*/
 @media screen and (max-width: 770px){
     .other_view_list p {
         font-size: 0.94rem;
-    }
-    .history_text_left li.date {
-        width: 35%;
     }
     li.history_title {
         font-size: 0.8rem;
