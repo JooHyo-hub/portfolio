@@ -1148,7 +1148,6 @@ section.design_artwork_wrap{
 a.artwork_list {
     display: block;
     width: 100%;
-    margin: 0 12px;
     box-sizing: border-box;
 }
 .artwork_img_box{
